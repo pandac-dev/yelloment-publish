@@ -48,20 +48,30 @@
       </section>
       <section class="shipping_final box_final">
         <div class="order_title">배송 정보</div>
-        <div>
-          <div class="name_div">
-            <span>홍길동</span><button>변경하기</button>
+        <div class="info_input">
+          <div class="input_field">
+            <div>이름</div>
+            <input type="text" class="width_input"placeholder="이름을 입력하세요" required/>
           </div>
-          <div class=phone>010 - 4744 - 6077</div>
-          <div class="address"><span class="post_number"></span>서울시 강남구 봉은사로 69길 37
-          부일빌딩 302호</div>
+          <div class="input_field">
+            <div>휴대폰 번호</div>
+            <input type="text" class="width_input"placeholder="휴대폰번호를 입력하세요" required/>
+          </div>
+          <div class="input_field">
+            <div>주소</div>
+            <input class="search_zipcode" required/>
+            <button class="gray_modify_button">우편번호 찾기</button>
+            <input class="width_input" placeholder="기본주소">
+            <input class="width_input" placeholder="상세주소" required/>
+          </div>
+         
         </div>
         <div class="order_subtitle">배송 요청 사항</div>
         <select class="shipping_select">
           <option>요청사항1</option>
           <option>요청사항2</option>
         </select>
-        <textarea rows="8" cols="85" class="shipping_input"onclick="this.value=''">내용을 입력하세요</textarea>
+        <textarea rows="8" cols="85" class="shipping_input" onclick="this.value=''">내용을 입력하세요</textarea>
       </section>
       <section class="pay_final box_final">
         <div class="order_title">결제정보</div>
@@ -74,14 +84,6 @@
         </div>
         <div class="pay_collection">
           <ul>
-            <li>
-              <label><input type="radio" name="chk_info" value="HTML">네이버페이</label></li>
-            <li>
-              <label><input type="radio" name="chk_info" value="HTML">카카오페이</label>
-            </li>
-            <li>
-              <label><input type="radio" name="chk_info" value="HTML">페이코</label>
-            </li>
             <li class="card">
               <label><input type="radio" name="chk_info" value="HTML">신용ㅣ체크카드</label>
             </li>
@@ -115,9 +117,6 @@
                 <label for="" class="card_label">비밀번호 앞2자리</label>
                 <input type="password">
               </div>
-              <div></div>
-              <div></div>
-              <div></div>
             </div>
           </div>
         </div>

@@ -631,7 +631,10 @@ h2 {
     font-size: 2.4rem;
     font-weight: 700;
   }
-  .order_title >div{display: flex;justify-content:space-between;}
+  .order_title > div {
+    display: flex;
+    justify-content: space-between;
+  }
 
   .order_title::after {
     margin: 2rem 0;
@@ -652,14 +655,17 @@ h2 {
   }
 
   /* 이름관련 */
+  input::-webkit-input-placeholder { color: #999; }
   .name {
     font-size: 2rem;
     font-weight: 700;
     color: #333;
   }
-  .name_input {
-    margin-right: 1rem;
+  .width_input {
+    width:100%;
+    margin-top:1rem;
   }
+  .search_zipcode{width:50%;margin-right:1rem;margin-top:1rem;}
   .name_div {
     width: 100%;
     display: flex;
@@ -737,9 +743,13 @@ h2 {
   }
   .shipping_select {
     margin-top: 2rem;
+    font-family: "Noto Sans KR", sans-serif;
     padding: 1rem;
   }
   .shipping_input {
+    font-family: "Noto Sans KR", sans-serif;
+    padding:1rem;
+    font-size:1.6rem;
     margin-top: 1rem;
     height: 10rem;
     color: #999;
@@ -834,6 +844,7 @@ h2 {
     line-height: 1.2;
   }
   .shipping_select_title {
+    font-family: no;
     font-size: 2rem;
     font-weight: 700;
     color: #333;
@@ -855,27 +866,53 @@ h2 {
     height: 18rem;
     border-radius: 1rem;
     margin: 2rem auto 0;
-    padding:2rem;
-    font-size:1.6rem;
+    padding: 2rem;
+    font-size: 1.6rem;
     font-weight: 500;
   }
 
-  .card_design div{
-    width:100%;
-    height:100%;
-    display:flex;
+  .card_design div {
+    width: 100%;
+    height: 100%;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-  .gray_modify_button{border-radius: 1rem;
+  .gray_modify_button {
+    border-radius: 1rem;
     background: #eaeaea;
     color: #333;
     font-size: 1.4rem;
     font-weight: 700;
     border: none;
-    padding: 0.5rem 1rem;}
-    .modify_div{display: flex;justify-content: space-between;width:100%}
-  .card_design div span:nth-child(2){letter-spacing:0.1rem;}
-  .shinhan{background:#002352;color:#fff;}
-  .woori{background:#169ae4;color:#fff;}
-  .hyundae{background:#333;color:#fff;}
+    padding: 0.5rem 1rem;
+  }
+  .modify_div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .card_design div span:nth-child(2) {
+    letter-spacing: 0.1rem;
+  }
+  .shinhan {
+    background: #002352;
+    color: #fff;
+  }
+  .woori {
+    background: #169ae4;
+    color: #fff;
+  }
+  .hyundae {
+    background: #333;
+    color: #fff;
+  }
+  .input_field {
+    margin-bottom: 2rem;
+  }
+  .input_field > div {
+    font-size: 1.8rem;
+    font-weight:700;
+    color:#333;
+  }
+  .input_field >input{padding:1rem;}
