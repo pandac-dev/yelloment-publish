@@ -1,0 +1,92 @@
+.yello_bg {
+  background: #ffcd27;
+}
+.wh_box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: #fff;
+  border-radius: 1rem;
+  padding: 4rem 2rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+.mypage {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 80rem;
+  padding: 2rem;
+  padding-top: 7rem;
+  letter-spacing: -0.2rem;
+}
+.mypage > div:nth-child(1) {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+}
+.myname {
+  font-size: 3rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.myinfo {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  font-size: 1.6rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.myinfo > div:nth-child(1) {
+  font-weight: 700;
+  color: #999;
+}
+.myinfo > div:nth-child(2) {
+  font-weight: 400;
+  color: #333;
+  font-size: 1.6rem;
+  letter-spacing: 0;
+}
+.myproduct {
+  display: flex;
+}
+.myproduct > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #333;
+}
+.product_title {
+  font-size: 1.4rem;
+}
+.my_button {
+  width: 30%;
+  display: flex;
+  padding: 1rem;
+  color: #333;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 2rem;
+  justify-content: center;
+  letter-spacing: -0.15rem;
+}
+.sub_history {
+  display: flex;
+}
+.sub_history_btn {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  background: #d2d2d2;
+  color: #333;
+  border: none;
+}

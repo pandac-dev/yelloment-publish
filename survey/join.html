@@ -7,42 +7,33 @@
     <meta name="description" content="portfolio">
     <link rel="icon" type="images/png" href="images/favicon.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-    <link rel="stylesheet" href="css/survey.css">
-     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://kit.fontawesome.com/7e24956d25.js" crossorigin="anonymous"></script>
     <script src="../js/main.js" defer></script>
     <script src="../js/jquery-3.5.1.min.js"></script>
-    <script src="../js/splitting.min.js"></script>
-    <script src="../js/slick.min.js"></script>
-    <script src="../js/scrolla.jquery.min.js"></script>
     <title>JMWORLD</title>
 </head>
 <body>
     <!-- navbar -->
     <nav id="navbar">
-        <div class="inner mobile">
-            <div class="navbar__logo">
-                <img src="../images/logo1.png" alt="">
-                <img src="../images/logo2.png" alt="">
-            </div>
-            <ul class="navbar__menu">
-                <li class="navbar__menu__item active" data-link="#div1">마이페이지</li>
-                <li class="navbar__menu__item" data-link="#resume">이벤트</li>
-                <li class="navbar__menu__item" data-link="#work">고객센터</li>
-            </ul>
+        <div class="navbar__logo">
+            <img src="../images/logo1.png" alt="">
+            <img src="../images/logo2.png" alt="">
         </div>
-        <a href="javascript:click()" class="navbar__toggle">
-            <span>메뉴</span>
+        <a  class="nav_x" href="../index.html">
+          <span></span>
+          <span></span>
         </a>
     </nav>
     <section class="login_cotents">
       <div class="content">
-        <h4>
+        <h3>
           <span>옐로먼트 정기구독 서비스는</span>
           <span>회원전용 서비스입니다</span>
-          </h4>
-          <p>회원가입을 진행해도<br>설문 결과가 사라지지 않습니다</p>
+          </h3>
+          <p><span>회원가입을 진행해도</span><span>설문 결과가 사라지지 않습니다</span></p>
         <button class="kakao__login"><span><img src="images/kakao_ico.png" alt=""></span><span>카카오톡으로 회원가입하기</span></button>
         <button class="naver__login"><span><img src="images/naver_ico.png" alt=""></span><span>네이버로 회원가입하기</span></button>
       </div>
@@ -58,21 +49,5 @@
             <p>COPYRIGHT © yelloment. ALL RIGHTS RESERVED.</p>
         </div>
     </footer>
-    <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-        
-        for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-              panel.style.display = "none";
-            } else {
-              panel.style.display = "block";
-            }
-          });
-        }
-    </script>
 </body>
 </html>

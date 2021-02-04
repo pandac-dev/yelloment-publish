@@ -7,8 +7,9 @@
     <meta name="description" content="portfolio">
     <link rel="icon" type="images/png" href="images/favicon.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
-     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://kit.fontawesome.com/7e24956d25.js" crossorigin="anonymous"></script>
     <script src="js/main.js" defer></script>
@@ -16,63 +17,131 @@
     <script src="js/splitting.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/scrolla.jquery.min.js"></script>
-    <title>JMWORLD</title>
+    <title>yelloment</title>
 </head>
 <body>
     <!-- navbar -->
     <nav id="navbar">
-        <div class="inner mobile">
+        <div class="inner">
             <div class="navbar__logo">
+                <a href="index.html">
                 <img src="images/logo1.png" alt="">
                 <img src="images/logo2.png" alt="">
+            </a>
             </div>
             <ul class="navbar__menu">
-                <li class="navbar__menu__item active" data-link="#div1">마이페이지</li>
-                <li class="navbar__menu__item" data-link="#resume">이벤트</li>
-                <li class="navbar__menu__item" data-link="#work">고객센터</li>
+                <li class="navbar__menu__item active">로그인</li>
+                <li class="navbar__menu__item">회원가입</li>
+                <li class="navbar__menu__item">고객센터</li>
             </ul>
         </div>
         <a href="javascript:click()" class="navbar__toggle">
             <span>메뉴</span>
         </a>
     </nav>
-    <section class="main__visual">
+    <!-- <section class="main__visual">
       <div>
           <div class="main__title">나에게 딱 맞는<br><span>농산물 소비의 시작</span></div>
             <img src="images/visual01.png" alt="">
      <button type="button" onclick="location.href='survey/survey01.html'">옐로먼트 시작하기</button>
-     <!-- <p>몇 가지 설문을 통해 옐로먼트 추천시스템이<br>고객님께 알맞은 과일과 쌀을 추천합니다</p>    --></div>
-    </section>
+     <p>몇 가지 설문을 통해 옐로먼트 추천시스템이<br>고객님께 알맞은 과일과 쌀을 추천합니다</p>   </div>
+    </section> -->
     <section class="visual">
-        <div>
+        <ul class="slide">
+            <li>
+                <div class="slide_div">
+                    <div class="slide_title">
+                        <div>나에게 딱 맞는<br><span class="yello_text">농산물의 시작</span></div>
+                        <div>품질 좋은 농산물만 담아 정기적으로 배송합니다</div>
+                    </div>
+                    <div class="slide_img">
+                        <img src="images/main_slide00.jpg" alt="visual01">
+                    </div>
+                </div>
+            </li>
+            <li class="join_plus">
+                <div class="slide_div">
+                    <div class="slide_title">
+                        <div>
+                           신규구독<br>
+                            <span class="yello_join">특별혜택</span>
+                        </div>
+                        <div>구독하고 10%할인받자</div>
+                    </div>
+                    <div class="slide_img">
+                        <img src="images/main_slide04.png" alt="visual01">
+                    </div>
+                </div>
+            </li>
+            <!-- <li>
+                <div class="slide_div">
+                    <div class="slide_title">
+                        <div>
+                            과즙 가득<br>
+                            <span class="pear">신고 배</span>
+                            <span class="origin">(전남 나주)</span>
+                        </div>
+                        <div>우리나라에서 가장 품질 좋은 배를 생산하는 
+                            나주의 신고 배입니다
+                            </div>
+                    </div>
+                    <div class="slide_img">
+                        <img src="images/main_slide02.jpg" alt="visual01">
+                    </div>
+                </div>
+            </li> -->
+            <li>
+                <div class="slide_div">
+                    <div class="slide_title">
+                        <div>
+                            진한 달콤함<br>
+                            <span class="appelmango">애플망고</span>
+                            <span class="origin">(페루산)</span>
+                        </div>
+                        <div>1~2월에는 페루산 망고가 제철을 맞아 
+                            가장 달콤합니다</div>
+                    </div>
+                    <div class="slide_img">
+                        <img src="images/main_slide03.jpg" alt="visual01">
+                    </div>
+                </div>
+            </li>
+            
+        </ul>
+         <section class="main__visual">
+       <button type="button" onclick="location.href='survey/survey01.html'" class="yello_button">옐로먼트 시작하기</button>
+      </section>
+    </section>
+    <section class="yello_character">
+        <div class="character01">
             <img src="images/logo1.png" alt="">
             <h2>구독서비스의 특징</h2>
         </div>
-        <ul class="slide">
-            <li>
+        <div class="character02">
+            <div>
                 <img src="images/slide01.png" alt="visual01">
                 <a href="#">큐레이션</a>
                 <div class="txt">
-                    <div>몇 가지 질문을 통해<br>고객님의 패키지를 구성해 드려요</div>
+                    <div>몇 가지 질문을 통해<br><span>고객님의 패키지를 구성해 드려요</span></div>
                 </div>
-            </li>
-            <li>
+            </div>
+            <div>
                 <img src="images/slide02.png" alt="visual01">
                 <a href="#">매주 한번</a>
                 <div class="txt">
                     <div>선택한 요일에<br>
-                        매주 옐로먼트가 배송됩니다</div>
+                        <span>매주 옐로먼트가 배송됩니다</span></div>
                 </div>
-            </li>
-            <li>
+            </div>
+            <div>
                 <img src="images/slide03.png" alt="visual01">
                 <a href="#">새로운 즐거움</a>
                 <div class="txt">
                     <div>오직 옐로먼트에서만 만날 수 있는<br>
-                        매주 새로운 테마와 구성을 만나보세요!</div>
+                        <span>매주 새로운 테마와 구성해요</span></div>
                 </div>
-            </li>
-        </ul>
+            </div>
+        </div>
     </section>
     <section class=boxmenu>
         <div class="section__title">
@@ -123,13 +192,21 @@
             <p>늘 먹는 과일과 쌀이 떨어질 때마다 좋은 상품을 찾고, 가격을 비교하는 데 
                 소모되는 에너지는 더 행복하고 가치 있는 시간에 사용하세요 
                 옐로먼트가 약속된 시간에 좋은 상품과 함께 찾아가겠습니다</p>
-                <img src="images/wise002.jpg" alt="">
          </div>
+    </section>
+    <section class="yello_banner">
+        <div>나에게 딱 맞는 농산물을 만나보세요</div>
+        <button>옐로먼트 시작하기</button>
     </section>
     <section class="qna">
         <div class="section__title">
             <h2>옐로먼트에 물어보세요</h2>
         </div>
+        <div class="qna_flex">
+            <div class="qna_image">
+                <img src="images/wise002.jpg" alt="">
+            </div>
+        <div class="qna_p">
         <div class="qna_div">
             <button class="accordion">어떤 농산물을 제공하나요?</button>
             <div class="panel">
@@ -168,6 +245,12 @@
           <p>처음 한 번만 등록하면 매주 자동으로 결제돼요. 등록한 결제 수단은 언제든지 변경할 수 있고, 정기결제 2일 전에 카카오톡 알림을 보내드립니다. 카카오톡 알림을 통해 가격과 주소 등도 미리 확인할 수 있어요.</p>
         </div>
         </div>
+    </div>
+    </div>
+    </section>
+    <section class="chat_div">
+        <img src="images/chat.png" alt="">
+    </section>
         <footer>
             <div>
                 <img src="images/logo_black.png" alt="">
@@ -195,6 +278,5 @@
               });
             }
             </script>
-    </section>
 </body>
 </html>

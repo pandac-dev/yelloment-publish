@@ -6,7 +6,7 @@ $(function(){
 //스크롤 반응하는 네비게이션 만들기
 const navbar = document.querySelector('#navbar');
 const navbarHeight =navbar.getBoundingClientRect().height;
-document.addEventListener('scroll',() =>{
+document.addEventListener('scroll', function(){
 if(window.scrollY > navbarHeight){
   navbar.classList.add('navbar--dark')
 }
@@ -86,7 +86,7 @@ const modal = document.querySelector(".navbar__menu");
 const navHeight = document.querySelector("#navbar")
 //const close = document.getElementsByClassName("close");
 
-toggleBtn.addEventListener('click',() =>{
+toggleBtn.addEventListener('click', function(){
   modal.classList.toggle('active');
   toggleBtn.classList.toggle('open'); 
   // modal.style.visibility = "visible";
@@ -101,16 +101,16 @@ toggleBtn.addEventListener('click',() =>{
 //   modal.style.opacity = 0;
 // }
 
-window.onclick = function(e){
-  if(e.target == modal){
-    modal.classList.remove('active');
-    toggleBtn.classList.remove('open'); 
-  }
-}
+// window.onclick = function(e){
+//   if(e.target == modal){
+//     modal.classList.remove('active');
+//     toggleBtn.classList.remove('open'); 
+//   }
+// }
 
 //스크롤 애니메이션
 $(function(){
-  $('.animate').scrolla({
+  $('.animate').scroll({
   // default
   mobile: true, // disable animation on mobiles
   once: false, // only once animation play on scroll
@@ -129,7 +129,7 @@ $(function(){
         infinite: true,
         arrows:false,//화살표
         dots:true,//인디케이터
-        autoplay:true,//자동재생
+        autoplay:false,//자동재생
         fade:false,//페이드인 효과
         autoplaySpeed:7000,//재생시간
         pauseOnHover:false,//호버시 멈춤 해제

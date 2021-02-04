@@ -8,6 +8,7 @@
     <link rel="icon" type="images/png" href="images/favicon.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <link rel="stylesheet" href="css/survey.css">
+    <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://kit.fontawesome.com/7e24956d25.js" crossorigin="anonymous"></script>
@@ -113,23 +114,11 @@
           <!-- Add Pagination -->
           <div class="swiper-pagination"></div>
         </div>
-      <button class="yello_button">정기배송</button>
+        <section class="yello_div_button mt3rem">
+          <button class="yello_button"  onclick = "location.href = 'celebration.html' ">구독하기</button>
+        </section>
     </section>
-    <!-- <script>
-      $(function(){
-        $('.pay_collection ul li').click(function(){
-          $('.pay_collection ul li').removeClass('checked');
-          $('.card_enrollment').removeClass('open');
-          $(this).addClass('checked')
-        });
-        $('.card').click(function(){
-          $('.card_enrollment').addClass('open');
-        });
-      })
-    </script> -->
   	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-	<!-- Initialize Swiper -->
 	<script>
 		var swiper = new Swiper('.swiper-container', {
       pagination: {
