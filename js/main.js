@@ -72,6 +72,21 @@ $(document).ready(function(){
   
   });
 
+  //설문조사 탭
+  $(document).ready(function(){
+
+    $('.purchase_tabs ul li').click(function(){
+        var tab_id = $(this).attr('data-tab');
+    
+        $('.purchase_tabs li').removeClass('active');
+        $('.work__projects').removeClass('active');
+    
+        $(this).addClass('active');
+        $("#"+tab_id).addClass('active');
+    });
+    
+    });
+  
 
 // const toggleBtn = document.querySelector('.navbar__toggle');
 // const menu = document.querySelector('.navbar__menu');
@@ -129,7 +144,7 @@ $(function(){
         infinite: true,
         arrows:false,//화살표
         dots:true,//인디케이터
-        autoplay:false,//자동재생
+        autoplay:true,//자동재생
         fade:false,//페이드인 효과
         autoplaySpeed:7000,//재생시간
         pauseOnHover:false,//호버시 멈춤 해제
