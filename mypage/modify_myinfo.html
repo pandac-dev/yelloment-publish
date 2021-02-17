@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/7e24956d25.js" crossorigin="anonymous"></script>
     <script src="../js/nav.js" defer></script>
     <script src="../js/jquery-3.5.1.min.js"></script>
-    <title>배송정보 수정</title>
+    <title>개인정보 수정</title>
 </head>
 <body>
     <!-- navbar -->
@@ -35,41 +35,25 @@
     </nav>
     <section class="mypage">
     <div>
-      <a href="#">마이페이지</a><img src="images/right_arrow.svg"><a href="#">구독정보</a><img src="images/right_arrow.svg"><a href="#">배송정보 수정</a>
+      <a href="#">마이페이지</a><img src="images/right_arrow.svg"><a href="#">내정보 수정</a>
     </div>
-    <section class="shipping_final box_final">
-        <div class="order_title">배송 정보</div>
-        <div class="info_input">
-            <div class="input_field">
-                <div>이름</div>
-                <input type="text" class="width_input" placeholder="이름을 입력하세요" required="">
+        <section class="box_final">
+            <div class="order_title">내 정보</div>
+            <div>
+                <div class="input_field">
+                    <div>이름</div>
+                    <input type="text" class="width_input" placeholder="이름을 입력하세요" required="">
+                </div>
+                <div class="input_field">
+                    <div>휴대폰 번호</div>
+                    <input type="text" class="width_input" placeholder="휴대폰번호를 입력하세요" required="">
+                </div>
             </div>
-            <div class="input_field">
-                <div>휴대폰 번호</div>
-                <input type="text" class="width_input" placeholder="휴대폰번호를 입력하세요" required="">
-            </div>
-            <div class="input_field">
-                <div>주소</div>
-                <input class="search_zipcode" required="">
-                <button class="gray_modify_button">우편번호 찾기</button>
-                <input class="width_input" placeholder="기본주소">
-                <input class="width_input" placeholder="상세주소" required="">
-            </div> 
-        </div>
-        <div class="order_subtitle">배송 요청 사항</div>
-        <select class="shipping_select">
-            <option>직접 받고 부재시 문 앞에 놓아주세요</option>
-            <option>문 앞에 놓아주세요</option>
-            <option>경비실에 맡겨주세요</option>
-            <option>택배함에 넣어주세요</option>
-            <option class="direct_input">직접 입력하기</option>
-        </select>
-        <textarea rows="8" cols="85" class="shipping_input" onclick="this.value=''" disabled="">내용을 입력하세요</textarea>
+            <div class="order_subtitle"><a href="#">탈퇴하기</a></div>
         </section>
         <section class="yello_div_button mt3rem">
             <button class="yello_button">저장하기</button>
         </section>
-    </section>
     </section>
     <footer>
         <div>
@@ -82,6 +66,5 @@
             <p>COPYRIGHT © yelloment. ALL RIGHTS RESERVED.</p>
         </div>
     </footer>
-    <script src="../js/shipping_textarea.js"></script>
 </body>
 </html>

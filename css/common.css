@@ -333,6 +333,10 @@ h2 {
   font-size: 1.4rem;
   font-weight: 700;
 }
+.order_subtitle a {
+  text-decoration: none;
+  color: #999;
+}
 .order_title > div {
   display: flex;
   align-items: center;
