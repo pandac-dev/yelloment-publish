@@ -1,54 +1,133 @@
 .yello_bg {
   background: #ffcd27;
 }
+.my_box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: #fff;
+  border-radius: 1rem;
+  width: 100%;
+  padding: 3rem 2rem;
+  margin-top: 2rem;
+  border: 1px solid #eaeaea;
+}
 .wh_box {
   display: flex;
   flex-direction: column;
   position: relative;
   background: #fff;
   border-radius: 1rem;
-  padding: 4rem 2rem;
   width: 100%;
   margin-top: 2rem;
+  border: 1px solid #eaeaea;
+}
+.wh_box a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  padding: 3rem 2rem;
 }
 .mypage {
   display: flex;
   flex-direction: column;
   width: 100%;
   max-width: 80rem;
-  padding: 2rem;
+  padding: 4rem 2rem;
   padding-top: 7rem;
   letter-spacing: -0.2rem;
 }
 .mypage > div:nth-child(1) {
   margin-top: 1rem;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 700;
   color: #333;
 }
+
 .myname {
-  font-size: 3rem;
+  font-size: 2.2rem;
   font-weight: 700;
+  letter-spacing: -0.2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.myname_sub {
+  display: flex;
+  align-items: center;
+}
+.myname_sub > span:nth-child(2) {
+  background: #ffcd27;
+  padding: 0.6rem 0.6rem;
+  display: flex;
+  font-size: 1.4rem;
+  border-radius: 0.5rem;
+  align-items: center;
+  margin-left: 1rem;
+}
+.myname_sub > span:nth-child(2) > span {
+  margin-left: 0.2rem;
+}
+.myname_sub > span > img {
+  width: 1.5rem;
+}
+.myname > img {
+  width: 3%;
+}
 .myinfo {
   display: flex;
   flex-direction: column;
-  padding: 1rem 0;
-  font-size: 1.6rem;
+  padding: 2rem 1rem;
+  font-size: 1.4rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 .myinfo > div:nth-child(1) {
+  display: flex;
   font-weight: 700;
   color: #999;
+  align-items: center;
+}
+.myinfo > div:nth-child(1) > img {
+  width: 2.5rem;
 }
 .myinfo > div:nth-child(2) {
-  font-weight: 400;
+  margin-top: 2rem;
+  font-weight: 900;
   color: #333;
-  font-size: 1.6rem;
+  font-size: 3rem;
   letter-spacing: 0;
+}
+.mypage_title {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 700;
+  justify-content: space-between;
+}
+.mypage_title > div {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.mypage_title > div:nth-child(2) {
+  color: #999;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.mypage_title > div > img {
+  width: 20%;
+}
+.mypage_title > div:nth-child(1) > div {
+  margin-left: 0.5rem;
+}
+.mypage_title > div:nth-child(2) > div {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+.mypage_title > div:nth-child(2) > img {
+  width: 0.5rem;
 }
 .myproduct {
   display: flex;
@@ -59,17 +138,18 @@
   justify-content: center;
   align-items: center;
   flex: 1;
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 700;
   color: #333;
 }
 .product_title {
   font-size: 1.4rem;
+  color: #999;
 }
 .my_button {
   width: 30%;
   display: flex;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   color: #333;
   font-size: 1.6rem;
   font-weight: 700;
@@ -77,6 +157,18 @@
   border-radius: 2rem;
   justify-content: center;
   letter-spacing: -0.15rem;
+}
+.subscribe_button {
+  display: flex;
+  padding: 0.5rem 1rem;
+  color: #333;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 2rem;
+  justify-content: center;
+  letter-spacing: -0.15rem;
+  margin-left: 1rem;
 }
 .sub_history {
   display: flex;
@@ -86,7 +178,75 @@
   padding: 1rem;
   font-size: 1.6rem;
   font-weight: 700;
-  background: #d2d2d2;
   color: #333;
+  background: #fff;
+  border: 1px solid #d2d2d2;
+}
+.subscribe_toggle {
+  padding: 0;
+  position: relative;
   border: none;
+  height: 2.5rem;
+  width: 5rem;
+  border-radius: 2.5rem;
+  background: #bdc1c8;
+}
+.handle {
+  position: absolute;
+  top: 50%;
+  left: 0.4rem;
+  transform: translateY(-50%);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+  background: #fff;
+  transition: all 0.2s linear;
+}
+.subscribe_toggle.active {
+  background: #ffcd27;
+}
+.subscribe_toggle.active > .handle {
+  left: 50%;
+}
+.sub_info > div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #999;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eaeaea;
+}
+.subtoggletxt_p {
+  display: flex;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.sub_list {
+  padding: 2rem 0 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.sub_list > div > span:nth-child(2) {
+  margin-left: 1rem;
+}
+.sub_list > div > span > span {
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.sub_list > div:nth-child(2) {
+  margin-top: 2rem;
+  text-align: right;
+  font-size: 3rem;
+  color: #333;
+}
+.shipping_request {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  color: #999;
 }

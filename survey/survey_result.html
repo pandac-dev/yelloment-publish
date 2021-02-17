@@ -48,48 +48,13 @@
             <p>원하시는 금액에 따라 선택해 보셔도 좋아요<br>선택하신 가격 옵션에 따라<br>적정한 비율로 구성하여 보내드릴게요</p>
           </div>
         </div>
-        <div class="result_size">
-          <div class="result_title">사이즈</div>
-          <div class="result_radio">
-            <input type="radio" name="chk_info" value="CSS"><span>싱글</span>
-            <input type="radio" name="chk_info" value="웹디자인"><span>더블</span>
-            <input type="radio" name="chk_info" value="웹디자인"><span>패밀리</span>
+        <div class="">
+          <div class="purchase_tabs">
+            <ul>
+              <li class="tab-link active" data-tab="tab-1">옐로먼트시작하기</li>
+              <li class="tab-link" data-tab="tab-2">한번 구매해보기</li>
+            </ul>
           </div>
-        </div>
-        <div class="result_composition">
-          <div class="result_title">구성</div>
-          <div class="preference">
-            <div class="agree_check">
-              <input type="checkbox" id="fruits" class="health_check">
-              <label for="fruits" class="checkbox float_left">
-                  <span>일상에 생기를 더하는 과일</span>
-              </label>
-          </div>
-          <div class="agree_check">
-            <input type="checkbox" id="rice" class="health_check">
-            <label for="rice" class="checkbox float_left">
-                <span>하루의 에너지를 주는 쌀</span>
-            </label>
-        </div>
-        <div class="agree_check">
-          <input type="checkbox" id="Grain" class="health_check">
-          <label for="Grain" class="checkbox float_left">
-              <span>건강과 풍미를 올리는 잡곡</span>
-          </label>
-      </div>
-      <div class="agree_check">
-        <input type="checkbox" id="vegetable" class="health_check">
-        <label for="vegetable" class="checkbox float_left">
-            <span>또 다른 즐거움, 곡물과 농식품</span>
-        </label>
-    </div>
-          </div>
-        </div>
-        <div class="purchase_tabs">
-          <ul>
-            <li class="tab-link active" data-tab="tab-1">옐로먼트시작하기</li>
-            <li class="tab-link" data-tab="tab-2">한번 구매해보기</li>
-          </ul>
           <div  class="work__projects active" id="tab-1">
             <div class="shipping_cycle">
               <div class="result_title">배송주기</div>
@@ -115,15 +80,59 @@
               </div>
             </div>
           </div>
+      </div>
+      <div class="optional_title">
+        <input type="checkbox" name="chk_info" value="HTML" id="option">
+        <label for="option">옵션을 변경할 수 있어요</label>
+      </div>
+      <div class="optional">
+        <div class="result_size">
+          <div class="result_title">사이즈</div>
+          <div class="result_radio">
+            <input type="radio" name="chk_info" value="CSS"><span>싱글</span>
+            <input type="radio" name="chk_info" value="웹디자인"><span>더블</span>
+            <input type="radio" name="chk_info" value="웹디자인"><span>패밀리</span>
+          </div>
+        </div>
+        <div class="result_composition">
+          <div class="result_title">구성</div>
+          <div class="preference">
+            <div class="agree_check">
+              <input type="checkbox" id="fruits" class="health_check">
+              <label for="fruits" class="checkbox float_left">
+                  <span>일상에 생기를 더하는 과일</span>
+              </label>
+            </div>
+            <div class="agree_check">
+              <input type="checkbox" id="rice" class="health_check">
+              <label for="rice" class="checkbox float_left">
+                  <span>하루의 에너지를 주는 쌀</span>
+              </label>
+          </div>
+          <div class="agree_check">
+            <input type="checkbox" id="Grain" class="health_check">
+            <label for="Grain" class="checkbox float_left">
+                <span>건강과 풍미를 올리는 잡곡</span>
+            </label>
+          </div>
+          <div class="agree_check">
+            <input type="checkbox" id="vegetable" class="health_check">
+            <label for="vegetable" class="checkbox float_left">
+                <span>또 다른 즐거움, 곡물과 농식품</span>
+            </label>
+          </div>
+        </div>
+        </div>
+      </div>
         <div class="result_cost">
           <div>총 결제 금액</div>
           <div class="week_cost"><span>1주</span><span>37000원</span></div>
         </div>
-      </div>
       <div class="yello_div_button pb3rem">
         <button class="yello_button" onclick="location.href='login.html'">다음</button>
       </div>
+      </div>
     </section>
-
+    <script src="js/option.js"></script>
 </body>
 </html>

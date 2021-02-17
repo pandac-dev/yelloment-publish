@@ -75,6 +75,9 @@ h2 {
   z-index: 100;
 }
 /* navbar */
+.backbutton {
+  display: none;
+}
 #navbar {
   position: fixed;
   background: transparent;
@@ -173,7 +176,7 @@ h2 {
   position: absolute;
   transform: rotate(45deg);
   display: block;
-  width: 50%;
+  width: 40%;
   height: 5px;
   background: #333;
   border-radius: 1rem;
@@ -182,7 +185,7 @@ h2 {
   position: absolute;
   transform: rotate(-45deg);
   display: block;
-  width: 50%;
+  width: 40%;
   height: 5px;
   background: #333;
   border-radius: 1rem;
@@ -253,6 +256,248 @@ h2 {
   border: none;
   padding: 0.5rem 1rem;
 }
+.box_final {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: #fff;
+  border-radius: 1rem;
+  padding: 4rem 2rem;
+  width: 100%;
+  margin-top: 2rem;
+  border: 1px solid #eaeaea;
+}
+.box_final > label {
+  display: flex;
+}
+.order_final {
+  color: #333;
+}
+.box_select {
+  display: flex;
+  align-items: center;
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+.box_select span:nth-child(1) {
+}
+.box_select img {
+  margin-left: 1rem;
+  width: 15%;
+}
+.order_final > div:nth-child(2) {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  color: #666;
+  font-weight: 400;
+}
+.order_final > div:nth-child(2)::after {
+  margin: 2rem 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #d2d2d2;
+}
+.order_final > div:nth-child(3) {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+}
+.order_final > div:nth-child(3) > span:nth-child(2) {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.order_title {
+  display: flex;
+  flex-direction: column;
+  color: #333;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.order_title > div {
+  display: flex;
+  justify-content: space-between;
+}
+.order_title::after {
+  margin: 2rem 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #d2d2d2;
+}
+.order_subtitle {
+  margin-top: 4rem;
+  color: #333;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.order_title > div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: #999;
+}
+.name_div {
+  width: 100%;
+  display: flex;
+  padding: 1rem 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.name_div > span {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+}
+.phone {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #999;
+  letter-spacing: -0.1rem;
+}
+.address {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #999;
+  line-height: 1.2;
+  word-break: keep-all;
+  letter-spacing: -0.1rem;
+}
+.search_zipcode {
+  width: 50%;
+  margin-right: 1rem;
+  border: 1px solid #eaeaea;
+  margin-top: 1rem;
+}
+.shipping_select {
+  border: 1px solid #eaeaea;
+  margin-top: 2rem;
+  font-family: "Noto Sans KR", sans-serif;
+  padding: 1rem;
+}
+.shipping_input {
+  font-family: "Noto Sans KR", sans-serif;
+  padding: 1rem;
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  height: 10rem;
+  color: #999;
+  border: 1px solid #eaeaea;
+}
+.width_input {
+  font-size: 1.6rem;
+  width: 100%;
+  margin-top: 1rem;
+  border: 1px solid #eaeaea;
+}
+.width_input::placeholder {
+  color: #d2d2d2;
+}
+.input_field {
+  margin-bottom: 2rem;
+}
+.input_field > div {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+}
+.input_field > input {
+  padding: 1rem;
+}
+.payinfo {
+  width: 100%;
+}
+.payinfo ul {
+  width: 100%;
+  font-size: 1.2rem;
+  letter-spacing: 0;
+  line-height: 1.2;
+  color: #666;
+  word-break: keep-all;
+}
+.payinfo ul li {
+  margin-bottom: 1.5rem;
+}
+.card_number,
+.card_date {
+  width: 100%;
+  margin-top: 2rem;
+}
+.card_label {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #666;
+}
+.card_number > div {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.card_number > div > input {
+  width: 22%;
+  height: 5rem;
+  border: 1px solid #d2d2d2;
+}
+.card_date div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card_date div input {
+  margin: 2rem 0;
+  padding: 0 1.5rem;
+  width: 45%;
+  height: 5rem;
+  border: 1px solid #d2d2d2;
+}
+.card_birth input,
+.card_password input {
+  margin: 2rem 0;
+  padding: 0 1.5rem;
+  width: 100%;
+  height: 5rem;
+  border: 1px solid #d2d2d2;
+}
+.card_birth ul {
+  color: #999;
+  font-size: 1.2rem;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+.card_design {
+  max-width: 30rem;
+  width: 90%;
+  height: 18rem;
+  border-radius: 1rem;
+  margin: 2rem auto 0;
+  padding: 2rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.card_design div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.shinhan {
+  background: #002352;
+  color: #fff;
+}
+.woori {
+  background: #169ae4;
+  color: #fff;
+}
+.hyundae {
+  background: #333;
+  color: #fff;
+}
 /* 모바일 */
 @media screen and (max-width: 450px) {
   body {
@@ -261,24 +506,50 @@ h2 {
   section {
     width: 100%;
   }
+  .backbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(180deg);
+    width: 4rem;
+    height: 4rem;
+    margin-left: 1rem;
+    z-index: 12;
+  }
+  .backbutton img {
+    width: 1rem;
+  }
+  #navbar.navbar--dark .backbutton img {
+    opacity: 1;
+  }
   #navbar {
+    display: block;
     z-index: 10;
     box-sizing: border-box;
     padding: 0;
     height: 7rem;
   }
-  .inner {
+  #navbar .inner {
     width: 100%;
-    flex-direction: column;
-    justify-content: flex-start;
+    height: 100%;
   }
   .navbar__logo {
+    display: block;
     position: absolute;
+    text-align: center;
     top: 1.5rem;
-    left: 1rem;
+    left: 50%;
+    transform: translate(-50%, 0);
     z-index: 2;
   }
   .navbar__logo img {
+    position: relative;
+    width: 12rem;
+  }
+  .navbar__logo img:nth-child(2) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     width: 12rem;
   }
   .navbar__menu::before {

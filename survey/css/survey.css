@@ -32,86 +32,6 @@ select::-ms-expand {
   font-weight: 700;
   color: #333;
 }
-.box_final {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  background: #fff;
-  border-radius: 1rem;
-  padding: 4rem 2rem;
-  width: 100%;
-  margin-top: 2rem;
-}
-.box_final > label {
-  display: flex;
-}
-.order_final {
-  color: #333;
-}
-.box_select {
-  display: flex;
-  align-items: center;
-  font-size: 3.6rem;
-  font-weight: 700;
-}
-.box_select span:nth-child(1) {
-}
-.box_select img {
-  margin-left: 1rem;
-  width: 15%;
-}
-.order_final > div:nth-child(2) {
-  margin-top: 2rem;
-  font-size: 1.6rem;
-  color: #666;
-  font-weight: 400;
-}
-.order_final > div:nth-child(2)::after {
-  margin: 2rem 0;
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  background: #d2d2d2;
-}
-.order_final > div:nth-child(3) {
-  display: flex;
-  justify-content: space-between;
-  font-size: 2rem;
-}
-.order_final > div:nth-child(3) > span:nth-child(2) {
-  font-size: 2.4rem;
-  font-weight: 700;
-}
-.order_title {
-  display: flex;
-  flex-direction: column;
-  color: #333;
-  font-size: 2.4rem;
-  font-weight: 700;
-}
-.order_title > div {
-  display: flex;
-  justify-content: space-between;
-}
-
-.order_title::after {
-  margin: 2rem 0;
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  background: #d2d2d2;
-}
-.order_subtitle {
-  margin-top: 2rem;
-  color: #333;
-  font-size: 2rem;
-  font-weight: 700;
-}
-.order_title > div {
-  width: 100%;
-}
 
 /* 원운동 */
 .circle {
@@ -275,6 +195,23 @@ select::-ms-expand {
 .per100 {
   width: 100%;
 }
+.health_survey_p {
+  margin: 0 auto;
+  max-width: 100rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 7rem;
+}
+.health_survey_p .desc {
+  margin-bottom: 10%;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.1rem;
+  color: #999;
+}
 .main__survey {
   margin: 0 auto;
   max-width: 100rem;
@@ -285,7 +222,56 @@ select::-ms-expand {
   width: 100%;
   height: calc(100vh - 7rem);
   margin-top: 7rem;
-  padding: 3rem;
+}
+.main__survey > .content {
+  padding: 4rem 2rem;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.login__button {
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.login__button button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  border: none;
+  border-radius: 3rem;
+}
+.login__button button:nth-child(1) {
+  margin-right: 2rem;
+}
+.kakao__login {
+  background: #fae300;
+}
+.kakao__login span:nth-child(1),
+.naver__login span:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+}
+.kakao__login span:nth-child(2) {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.15rem;
+}
+.naver__login span:nth-child(2) {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.15rem;
+}
+.naver__login {
+  margin-top: 1rem;
+  background: #01c73c;
 }
 .main__result {
   margin: 0 auto;
@@ -298,7 +284,8 @@ select::-ms-expand {
   margin-top: 7rem;
   padding: 3rem;
 }
-.main__survey .content {
+.health_survey_p .content {
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -306,12 +293,18 @@ select::-ms-expand {
   width: 100%;
   height: 90%;
 }
-.main__survey .content img {
-  width: 40%;
-  height: auto;
-  margin-bottom: 10%;
+.folder_img {
+  width: 40% !important;
 }
-.main__survey .content h3 {
+.main__survey .content img {
+  width: 70%;
+  height: auto;
+}
+.main__survey .content > img {
+  margin-bottom: 5%;
+}
+.main__survey .content h3,
+.health_survey_p .content h3 {
   font-size: 4rem;
   font-weight: 700;
   line-height: 1.3;
@@ -319,11 +312,13 @@ select::-ms-expand {
   color: #333;
   word-break: keep-all;
 }
-.main__survey .content h3 span {
+.main__survey .content h3 span,
+.health_survey_p .content h3 span {
   font-weight: 400;
   display: block;
 }
-.main__survey .content h3 span:last-child {
+.main__survey .content h3 span:last-child,
+.health_survey_p .content h3:last-child {
   font-weight: 700;
   position: relative;
   z-index: 10;
@@ -333,7 +328,7 @@ select::-ms-expand {
   display: block;
   position: absolute;
   top: 1.5rem;
-  width: 68%;
+  width: 65%;
   height: 2rem;
   background: #ffe58f;
   border-radius: 5px;
@@ -345,7 +340,7 @@ select::-ms-expand {
     width: 0;
   }
   100% {
-    width: 68%;
+    width: 65%;
   }
 }
 
@@ -358,7 +353,7 @@ select::-ms-expand {
 }
 .main__survey .content .desc__deco {
   font-size: 1.2rem;
-  margin-bottom: 30%;
+  margin-bottom: 3rem;
   color: #999;
 }
 .form_name_p {
@@ -375,7 +370,7 @@ select::-ms-expand {
   font-family: "Noto Sans Korean", sans-serif;
   border: 0;
   padding: 2rem;
-  border: 3px solid #999;
+  border: 3px solid #d2d2d2;
   border-radius: 3rem;
   outline: none;
 }
@@ -390,6 +385,7 @@ select::-ms-expand {
   color: #999;
 }
 .button_div {
+  padding: 3rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -399,17 +395,54 @@ select::-ms-expand {
   margin-right: 1rem;
 }
 .health_survey {
-  color: #333;
+  color: #d2d2d2;
   display: flex;
+  justify-content: center;
   position: relative;
 }
 .health_survey + .health_survey {
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
-.agree_check,
-.disagree_check {
+.health_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.health_div > img {
+  width: 50% !important;
+  margin: 0 auto;
+  filter: grayscale(1);
+  transition: all 0.3s linear;
+}
+.health_div > img.open {
+  filter: grayscale(0);
+}
+.health_check {
   position: relative;
-  flex: 1;
+  text-align: center;
+}
+.health_check input[type="checkbox"] {
+  display: none;
+}
+.health_check input[type="checkbox"] + label {
+  display: inline-block;
+  cursor: pointer;
+  color: #d2d2d2;
+  transition: all 0.3s linear;
+}
+.health_check input[type="checkbox"] + label span {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.health_check input[type="checkbox"]:checked + label {
+  color: #333;
+}
+.disagree_check {
+  display: flex;
+  width: 60%;
+  margin-top: 2rem;
 }
 .agree_check input[type="checkbox"],
 .disagree_check input[type="checkbox"] {
@@ -418,9 +451,10 @@ select::-ms-expand {
 .agree_check input[type="checkbox"] + label,
 .disagree_check input[type="checkbox"] + label {
   display: inline-block;
-  width: 25px;
-  height: 25px;
-  background: #eaeaea;
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  border: 1px solid #d2d2d2;
   cursor: pointer;
   border-radius: 25px;
   float: left;
@@ -431,10 +465,19 @@ select::-ms-expand {
   clear: both;
   content: "";
 }
+
+.agree_check input[type="checkbox"] + label span,
+.disagree_check input[type="checkbox"] + label span {
+  position: absolute;
+  padding-left: 3.5rem;
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
 .agree_check input[type="checkbox"]:checked + label {
-  background: url(../images/survey_agree.svg) #00b327 no-repeat 4px 4.5px/16px
-    16px;
-  float: left;
+  background: url(../images/survey_agree.svg) #00b327 no-repeat 4px 4.5px/14px
+    14px;
   color: #00b327;
 }
 .disagree_check input[type="checkbox"]:checked + label {
@@ -443,27 +486,14 @@ select::-ms-expand {
   float: left;
   color: #ff0000;
 }
-
-.agree_check input[type="checkbox"] + label span,
-.disagree_check input[type="checkbox"] + label span {
-  position: absolute;
-  top: 2px;
-  left: 0;
-  padding-left: 3.5rem;
-  display: block;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #333;
-}
 .final_survey {
   position: absolute;
   bottom: 5rem;
   width: 100%;
 }
-
 /* 이름관련 */
 input::-webkit-input-placeholder {
-  color: #999;
+  color: #d2d2d2;
 }
 .name {
   font-size: 2rem;
@@ -474,23 +504,7 @@ input::-webkit-input-placeholder {
   font-size: 1.6rem;
   width: 100%;
   margin-top: 1rem;
-}
-.search_zipcode {
-  width: 50%;
-  margin-right: 1rem;
-  margin-top: 1rem;
-}
-.name_div {
-  width: 100%;
-  display: flex;
-  padding: 1rem 0;
-  justify-content: space-between;
-  align-items: center;
-}
-.name_div > span {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #333;
+  border: 1px solid #eaeaea;
 }
 .name_div > button {
   border-radius: 1rem;
@@ -502,9 +516,10 @@ input::-webkit-input-placeholder {
   padding: 0.5rem 1rem;
 }
 .phone {
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: #777;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #999;
+  letter-spacing: -0.1rem;
 }
 
 .modify_button {
@@ -536,40 +551,6 @@ input::-webkit-input-placeholder {
   border-radius: 2rem;
   letter-spacing: -0.2rem;
 }
-.address {
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: #777;
-  line-height: 1.2;
-  word-break: keep-all;
-}
-.shipping_select {
-  margin-top: 2rem;
-  font-family: "Noto Sans KR", sans-serif;
-  padding: 1rem;
-}
-.shipping_input {
-  font-family: "Noto Sans KR", sans-serif;
-  padding: 1rem;
-  font-size: 1.6rem;
-  margin-top: 1rem;
-  height: 10rem;
-  color: #999;
-}
-.payinfo {
-  width: 100%;
-}
-.payinfo ul {
-  width: 100%;
-  font-size: 1.2rem;
-  letter-spacing: 0;
-  line-height: 1.2;
-  color: #666;
-  word-break: keep-all;
-}
-.payinfo ul li {
-  margin-bottom: 1.5rem;
-}
 .card {
   display: flex;
   align-items: center;
@@ -582,16 +563,23 @@ input::-webkit-input-placeholder {
 .card > label {
   pointer-events: none;
 }
-.card > input {
-  border: 1px solid #999;
-  width: 2rem;
-  height: 2rem;
+.card > input,
+.optional_title > input {
+  border: 1px solid #d2d2d2;
+  width: 2.4rem;
+  height: 2.4rem;
   border-radius: 2rem;
   margin-right: 0.5rem;
 }
-.card > input:checked {
-  background: #ffcd27;
+.card > input:checked,
+.optional_title > input:checked {
   border: none;
+  background: url(../images/survey_agree.svg) #00b327 no-repeat 5px 5px/14px
+    14px;
+}
+
+.optional_title > input:checked + label {
+  color: #00b327;
 }
 
 .pay_collection > div.checked {
@@ -599,17 +587,6 @@ input::-webkit-input-placeholder {
   font-size: 1.6rem;
   font-weight: 700;
   border: 1px solid #ffcd27;
-}
-.card_number > div {
-  margin-top: 1rem;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-.card_number > div > input {
-  width: 22%;
-  height: 5rem;
-  border: 1px solid #d2d2d2;
 }
 .card_enrollment {
   display: none;
@@ -619,44 +596,6 @@ input::-webkit-input-placeholder {
 }
 .card_enrollment > div {
   padding: 1rem;
-}
-.card_number,
-.card_date {
-  width: 100%;
-  margin-top: 2rem;
-}
-.card_date div {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.card_date div input {
-  margin: 2rem 0;
-  padding: 0 1.5rem;
-  width: 45%;
-  height: 5rem;
-  border: 1px solid #d2d2d2;
-}
-.card_label {
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: #666;
-}
-.card_birth input,
-.card_password input {
-  margin: 2rem 0;
-  padding: 0 1.5rem;
-  width: 100%;
-  height: 5rem;
-  border: 1px solid #d2d2d2;
-}
-.card_birth ul {
-  color: #999;
-  font-size: 1.2rem;
-  margin-top: -1rem;
-  margin-bottom: 2rem;
-  line-height: 1.2;
 }
 .shipping_select_title {
   font-family: no;
@@ -672,24 +611,6 @@ input::-webkit-input-placeholder {
 .swiper-wrapper {
   width: 100%;
   height: 100%;
-}
-.card_design {
-  max-width: 30rem;
-  width: 90%;
-  height: 18rem;
-  border-radius: 1rem;
-  margin: 2rem auto 0;
-  padding: 2rem;
-  font-size: 1.6rem;
-  font-weight: 500;
-}
-
-.card_design div {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 .gray_modify_button {
   border-radius: 1rem;
@@ -707,29 +628,6 @@ input::-webkit-input-placeholder {
 }
 .card_design div span:nth-child(2) {
   letter-spacing: 0.1rem;
-}
-.shinhan {
-  background: #002352;
-  color: #fff;
-}
-.woori {
-  background: #169ae4;
-  color: #fff;
-}
-.hyundae {
-  background: #333;
-  color: #fff;
-}
-.input_field {
-  margin-bottom: 2rem;
-}
-.input_field > div {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #333;
-}
-.input_field > input {
-  padding: 1rem;
 }
 /* 배송지 검색 */
 .zipcode_title {
@@ -868,6 +766,9 @@ input::-webkit-input-placeholder {
   letter-spacing: -0.15rem;
   line-height: 1.3;
 }
+.result_modify {
+  display: none;
+}
 .result_size {
   display: flex;
   flex-direction: column;
@@ -891,18 +792,31 @@ input::-webkit-input-placeholder {
   font-weight: 700;
 }
 .result_radio input {
-  width: 20px;
-  height: 20px;
+  position: relative;
+  width: 24px;
+  height: 24px;
   border-radius: 20px;
   border: 1px solid #d2d2d2;
   margin-right: 0.5rem;
 }
 .result_radio > input:checked {
+  border: 2px solid #ffcd27;
+}
+.result_radio > input:checked:before {
+  display: block;
+  position: absolute;
+  content: "";
+  border-radius: 100%;
+  height: 12px;
+  width: 12px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
   background: #ffcd27;
-  border: none;
 }
 .result_composition {
-  padding: 5rem 2rem 0;
+  padding: 5rem 2rem 3rem;
   display: flex;
   flex-direction: column;
 }
@@ -983,8 +897,25 @@ input::-webkit-input-placeholder {
   padding: 0.5rem 1rem;
   border-radius: 1rem;
 }
+.optional_title {
+  display: flex;
+  padding: 2rem;
+  font-size: 2rem;
+  vertical-align: middle;
+  align-items: center;
+}
+.optional_title label {
+  pointer-events: none;
+}
+.optional {
+  display: none;
+}
 @media screen and (max-width: 450px) {
-  .main__survey .content h3 {
+  .main__survey .content h3,
+  .health_survey_p .content h3 {
     font-size: 2.5rem;
+  }
+  .login__button {
+    flex-direction: column;
   }
 }

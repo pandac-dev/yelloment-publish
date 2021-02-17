@@ -1,8 +1,8 @@
 'use strict';
 //글자애니메이션 splitting 데모사이트 그대로 작성 따라하기
-$(function(){
-  Splitting();
-});
+// $(function(){
+//   Splitting();
+// });
 //스크롤 반응하는 네비게이션 만들기
 const navbar = document.querySelector('#navbar');
 const navbarHeight =navbar.getBoundingClientRect().height;
