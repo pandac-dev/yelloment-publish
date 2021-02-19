@@ -19,7 +19,7 @@
   background: #fff;
   border-radius: 1rem;
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   border: 1px solid #eaeaea;
   color: #333;
   outline: none;
@@ -56,7 +56,7 @@
   color: #333;
 }
 .myname {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 700;
   letter-spacing: -0.2rem;
   display: flex;
@@ -64,6 +64,13 @@
   align-items: center;
   padding-bottom: 2rem;
   border-bottom: 1px solid #d2d2d2;
+}
+.myname div:nth-child(1) {
+  display: flex;
+  align-items: center;
+}
+.myname div:nth-child(1) > span:nth-child(1) {
+  margin-right: 1rem;
 }
 .myname_sub {
   display: flex;
@@ -90,9 +97,8 @@
 .myinfo {
   display: flex;
   flex-direction: column;
-  padding: 2rem 1rem;
+  padding: 3rem 0rem;
   font-size: 1.4rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 .myinfo > div:nth-child(1) {
   display: flex;
@@ -104,44 +110,68 @@
   width: 2.5rem;
 }
 .myinfo > div:nth-child(2) {
-  margin-top: 2rem;
-  font-weight: 900;
+  margin-top: 1rem;
+  font-weight: 700;
   color: #333;
-  font-size: 3rem;
+  font-size: 2.4rem;
   letter-spacing: 0;
+}
+.my_manage {
+  display: flex;
+  font-size: 1.6rem;
+}
+.shipping_manage,
+.card_manage {
+  display: flex;
+  width: 50%;
+}
+.shipping_manage a,
+.card_manage a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 0rem;
+  text-decoration: none;
+  color: #333;
+}
+.shipping_manage > a > div:nth-child(2),
+.card_manage > a > div:nth-child(2) {
+  width: 0.7rem;
+  margin-left: 0.5rem;
 }
 .mypage_title {
   display: flex;
   align-items: center;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   color: #333;
   font-weight: 700;
   justify-content: space-between;
-  letter-spacing: -0.2rem;
+  letter-spacing: -0.1rem;
 }
-.mypage_title > div {
+.mypage_title > div:nth-child(1) {
   display: flex;
   align-items: center;
-  flex: 1;
 }
-.mypage_title > div:nth-child(2) {
-  color: #999;
+.more_button {
   display: flex;
-  justify-content: flex-end;
+  white-space: nowrap;
+  background: #eaeaea;
+  color: #0099ff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  justify-content: center;
   align-items: center;
+  font-size: 1.2rem;
+}
+.product_list {
+  margin: 1rem 0;
+  font-size: 1.6rem;
 }
 .mypage_title > div > img {
   width: 20%;
 }
 .mypage_title > div:nth-child(1) > div {
   margin-left: 0.5rem;
-}
-.mypage_title > div:nth-child(2) > div {
-  margin-right: 1rem;
-  font-size: 1.2rem;
-}
-.mypage_title > div:nth-child(2) > img {
-  width: 0.5rem;
 }
 .myproduct {
   display: flex;
@@ -150,7 +180,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   flex: 1;
   font-size: 2rem;
   font-weight: 700;
@@ -161,16 +190,45 @@
   color: #999;
 }
 .my_button {
-  width: 30%;
   display: flex;
   padding: 0.5rem 1rem;
   color: #333;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 700;
   border: none;
   border-radius: 2rem;
   justify-content: center;
   letter-spacing: -0.15rem;
+}
+.dot_p {
+  position: relative;
+}
+.dot {
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  background: #999;
+}
+.dot::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  background: #999;
+  position: absolute;
+  top: 7px;
+}
+.dot::after {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  background: #999;
+  position: absolute;
+  top: -7px;
 }
 .subscribe_button {
   display: flex;
