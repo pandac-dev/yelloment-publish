@@ -8,7 +8,7 @@
     <link rel="icon" type="images/png" href="images/favicon.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="css/mypage.css">
+    <link rel="stylesheet" href="css/order_list.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://kit.fontawesome.com/7e24956d25.js" crossorigin="anonymous"></script>
     <script src="../js/nav.js" defer></script>
@@ -17,65 +17,51 @@
 </head>
 <body class="gray_bg">
     <!-- navbar -->
-    <nav id="navbar">
-        <div class="inner mobile">
-            <div class="navbar__logo">
-                <img src="../images/logo1.png" alt="">
-                <img src="../images/logo2.png" alt="">
-            </div>
-            <ul class="navbar__menu">
-                <li class="navbar__menu__item active" data-link="#div1">마이페이지</li>
-                <li class="navbar__menu__item" data-link="#resume">이벤트</li>
-                <li class="navbar__menu__item" data-link="#work">고객센터</li>
-            </ul>
-        </div>
-        <a href="javascript:click()" class="navbar__toggle">
-            <span>메뉴</span>
-        </a>
+    <nav class="mypage_nav">
+      <a href="mypage_main00.html" class="backbutton"><img src="images/right_arrow.svg" alt=""></a>
+      <div>주문내역</div>
     </nav>
-    <section class="mypage">
-        <div class=""><a href="#">주문내역</a></div>
-        <section class="my_box">
+    <section class="container">
+        <section class="order_wrap">
+          <div class="order_date">2020.12.27</div>
+          <div class="order_box">
             <div class="myname">
-                <div class="myname_sub">
-                    <span>2020.12.27</span>
-                </div>
+              <div class="sub_round">
+                <span>우리집</span>
+                <span>(10회차)</span>
+              </div>
                 <div>
-                  <div class="more_button">주문상세</div>
+                  <div class="order_more_button">주문상세</div>
               </div>
             </div>
             <div class="order_history_info">
-                <div class="sub_round">
-                  <span>우리집</span>
-                  <span>(10회차)</span>
-                </div>
                 <div class="order_history_space">
                   <div>구독상품</div>
-                  <div>싱글(37,000)</div>
+                  <div class="order_cost">싱글(37,000)</div>
                 </div>
                 <div class="order_history_space">
                   <div>상태</div>
                   <div>상품 준비 중</div>
                 </div>
             </div>
+        </div>
         </section>
-        <section class="my_box">
+        <section class="order_wrap">
+           <div class="order_date">2020.12.20</div> 
+        <div class="order_box">
           <div class="myname">
-              <div class="myname_sub">
-                  <span>2020.12.20</span>
-              </div>
-              <div>
-                <div class="more_button">주문상세</div>
+            <div class="sub_round">
+              <span>엄마집</span>
+              <span>(8회차)</span>
+            </div>
+            <div>
+              <div class="order_more_button">주문상세</div>
             </div>
           </div>
           <div class="order_history_info">
-              <div class="sub_round">
-                <span>엄마집</span>
-                <span>(8회차)</span>
-              </div>
               <div class="order_history_space">
                 <div>구독상품</div>
-                <div>싱글(37,000)</div>
+                <div class="order_cost">싱글(37,000)</div>
               </div>
               <div class="order_history_space">
                 <div>상태</div>
@@ -85,34 +71,35 @@
           <div class="delivery_div">
             <button class="delivery_tracking">배송조회</button>
           </div>
-      </section>
-      <section class="my_box">
-        <div class="myname">
-            <div class="myname_sub">
-                <span>2020.12.13</span>
-            </div>
-            <div>
-              <div class="more_button">주문상세</div>
-          </div>
-        </div>
-        <div class="order_history_info">
-            <div class="sub_round">
-              <span>우리집</span>
-              <span>(9회차)</span>
-            </div>
-            <div class="order_history_space">
-              <div>구독상품</div>
-              <div>싱글(37,000)</div>
-            </div>
-            <div class="order_history_space">
-              <div>상태</div>
-              <div>배송완료</div>
-            </div>
-        </div>
-        <div class="delivery_div">
-          <button class="delivery_tracking">배송조회</button>
-        </div>
+      </div>
     </section>
+    <section class="order_wrap">
+      <div class="order_date">2020.12.13</div> 
+   <div class="order_box">
+     <div class="myname">
+       <div class="sub_round">
+         <span>우리집</span>
+         <span>(9회차)</span>
+       </div>
+       <div>
+         <div class="order_more_button">주문상세</div>
+       </div>
+     </div>
+     <div class="order_history_info">
+         <div class="order_history_space">
+           <div>구독상품</div>
+           <div class="order_cost">싱글(37,000)</div>
+         </div>
+         <div class="order_history_space">
+           <div>상태</div>
+           <div>배송완료</div>
+         </div>
+     </div>
+     <div class="delivery_div">
+       <button class="delivery_tracking">배송조회</button>
+     </div>
+ </div>
+</section>
     </section>
     <footer>
         <div>

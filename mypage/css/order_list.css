@@ -1,0 +1,130 @@
+/* 주문내역 */
+.mypage_nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 5rem;
+  background: #fff;
+}
+.mypage_nav > a {
+  position: absolute;
+  left: 2rem;
+}
+.mypage_nav > div {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 80rem;
+  padding: 2rem 2rem 7rem;
+  letter-spacing: -0.1rem;
+}
+.container > section:nth-child(1) {
+  padding: 0;
+}
+.order_wrap {
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 2rem 0 0;
+}
+.order_date {
+  padding: 1rem 0;
+}
+.order_box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: #fff;
+  border-radius: 1rem;
+  width: 100%;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.myname {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #d2d2d2;
+}
+.myname div:nth-child(1) {
+  display: flex;
+  align-items: center;
+}
+.myname div:nth-child(1) > span:nth-child(1) {
+  margin-right: 1rem;
+  letter-spacing: ;
+}
+.myname_sub {
+  display: flex;
+  align-items: center;
+}
+.myname_sub > span:nth-child(2) {
+  background: #ffcd27;
+  padding: 0.6rem 0.6rem;
+  display: flex;
+  font-size: 1.4rem;
+  border-radius: 0.5rem;
+  align-items: center;
+  margin-left: 1rem;
+}
+.myname_sub > span:nth-child(2) > span {
+  margin-left: 0.2rem;
+}
+.myname_sub > span > img {
+  width: 1.5rem;
+}
+.myname > img {
+  width: 3%;
+}
+.order_history_info {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+.sub_round {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.order_history_space {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+.order_cost {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.delivery_div {
+  text-align: right;
+  border-top: 1px solid #eaeaea;
+  padding: 2rem 0 0;
+}
+.delivery_tracking {
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+}
+.order_more_button {
+  display: flex;
+  white-space: nowrap;
+  background: #ffcd27;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
