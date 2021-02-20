@@ -8,9 +8,10 @@
   background: #fff;
   border-radius: 1rem;
   width: 100%;
-  padding: 3rem 2rem;
+  padding: 2rem;
   margin-top: 2rem;
-  border: 1px solid #eaeaea;
+  border: 1px solid #ccc;
+  cursor: pointer;
 }
 .wh_box {
   display: flex;
@@ -20,7 +21,7 @@
   border-radius: 1rem;
   width: 100%;
   margin-top: 1.5rem;
-  border: 1px solid #eaeaea;
+  border: 1px solid #ccc;
   color: #333;
   outline: none;
 }
@@ -38,7 +39,7 @@
   max-width: 80rem;
   padding: 4rem 2rem;
   padding-top: 7rem;
-  letter-spacing: -0.2rem;
+  letter-spacing: -0.1rem;
 }
 .mypage > div:nth-child(1) {
   display: flex;
@@ -200,36 +201,7 @@
   justify-content: center;
   letter-spacing: -0.15rem;
 }
-.dot_p {
-  position: relative;
-}
-.dot {
-  display: block;
-  width: 4px;
-  height: 4px;
-  border-radius: 4px;
-  background: #999;
-}
-.dot::before {
-  content: "";
-  display: block;
-  width: 4px;
-  height: 4px;
-  border-radius: 4px;
-  background: #999;
-  position: absolute;
-  top: 7px;
-}
-.dot::after {
-  content: "";
-  display: block;
-  width: 4px;
-  height: 4px;
-  border-radius: 4px;
-  background: #999;
-  position: absolute;
-  top: -7px;
-}
+
 .subscribe_button {
   display: flex;
   padding: 0.5rem 1rem;
@@ -321,4 +293,34 @@
   margin-top: 1rem;
   font-size: 1.4rem;
   color: #999;
+}
+/* 주문내역 */
+.order_history_info {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+.sub_round {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.order_history_space {
+  display: flex;
+  justify-content: space-between;
+}
+.order_history_info .order_history_space {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+}
+.delivery_div {
+  text-align: right;
+  border-top: 1px solid #eaeaea;
+  padding: 2rem 0 0;
+}
+.delivery_tracking {
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
 }

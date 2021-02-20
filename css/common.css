@@ -492,6 +492,7 @@ h2 {
   flex-direction: column;
   justify-content: space-between;
 }
+/* 카드디자인 */
 .shinhan {
   background: #002352;
   color: #fff;
@@ -504,6 +505,38 @@ h2 {
   background: #333;
   color: #fff;
 }
+/* 상세보기 dot */
+.dot_p {
+  position: relative;
+}
+.dot {
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  background: #999;
+}
+.dot::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  background: #999;
+  position: absolute;
+  top: 7px;
+}
+.dot::after {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  background: #999;
+  position: absolute;
+  top: -7px;
+}
+
 /* 모바일 */
 @media screen and (max-width: 450px) {
   body {
