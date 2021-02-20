@@ -17,10 +17,23 @@
 </head>
 <body class="gray_bg">
     <!-- navbar -->
-    <nav class="mypage_nav">
-      <a href="mypage_main00.html" class="backbutton"><img src="images/right_arrow.svg" alt=""></a>
-      <div>주문내역</div>
-    </nav>
+    <nav id="navbar">
+      <div class="inner mobile">
+          <div class="navbar__logo">
+              <img src="../images/logo1.png" alt="">
+              <img src="../images/logo2.png" alt="">
+          </div>
+          <ul class="navbar__menu">
+              <li class="navbar__menu__item active" data-link="#div1">마이페이지</li>
+              <li class="navbar__menu__item" data-link="#resume">이벤트</li>
+              <li class="navbar__menu__item" data-link="#work">고객센터</li>
+          </ul>
+      </div>
+      <a href="javascript:click()" class="navbar__toggle">
+          <span>메뉴</span>
+      </a>
+  </nav>
+  <section class="title_name">주문내역</section>
     <section class="container">
         <section class="order_wrap">
           <div class="order_date">2020.12.27</div>

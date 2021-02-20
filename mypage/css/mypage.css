@@ -31,7 +31,7 @@
   background: #fff;
   border-radius: 1rem;
   width: 100%;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   border: 1px solid #ccc;
   color: #333;
   outline: none;
@@ -48,24 +48,12 @@
   flex-direction: column;
   width: 100%;
   max-width: 80rem;
-  padding: 4rem 2rem;
-  padding-top: 7rem;
+  padding: 2em 2rem 7rem;
   letter-spacing: -0.1rem;
 }
-.mypage > div:nth-child(1) {
-  display: flex;
-  align-items: center;
-  margin-top: 1rem;
-  font-size: 1.8rem;
-  font-weight: 700;
-}
-.mypage > div:nth-child(1) img {
-  width: 0.8rem;
-  margin: 0 1rem;
-}
-.mypage > div:nth-child(1) a {
-  text-decoration: none;
-  color: #333;
+.mypage .wh_box:nth-child(1),
+.mypage .my_box:nth-child(1) {
+  margin: 0;
 }
 .myname {
   font-size: 2rem;
