@@ -113,29 +113,34 @@
   margin-top: 1rem;
   font-weight: 700;
   color: #333;
-  font-size: 2.4rem;
+  font-size: 2rem;
   letter-spacing: 0;
 }
 .my_manage {
   border-top: 1px solid #d2d2d2;
   display: flex;
   justify-content: space-between;
-  padding: 0 2rem;
   font-size: 1.4rem;
 }
 .shipping_manage,
 .card_manage {
   display: flex;
+  width: 50%;
+}
+.shipping_manage {
+  border-right: 1px solid #d2d2d2;
 }
 .shipping_manage a,
 .card_manage a {
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 100%;
   padding: 2rem 0rem;
   text-decoration: none;
   color: #333;
 }
+
 .shipping_manage > a > div:nth-child(2),
 .card_manage > a > div:nth-child(2) {
   width: 0.7rem;
