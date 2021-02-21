@@ -8,9 +8,8 @@
   background: #fff;
   border-radius: 1rem;
   width: 100%;
-  padding: 2rem;
   margin-top: 2rem;
-  border: 1px solid #ccc;
+  border: 1px solid #d2d2d2;
   cursor: pointer;
 }
 .order_box {
@@ -21,7 +20,7 @@
   border-radius: 1rem;
   width: 100%;
   padding: 2rem;
-  border: 1px solid #ccc;
+  border: 1px solid #d2d2d2;
   cursor: pointer;
 }
 .wh_box {
@@ -32,7 +31,7 @@
   border-radius: 1rem;
   width: 100%;
   margin-top: 2rem;
-  border: 1px solid #ccc;
+  border: 1px solid #d2d2d2;
   color: #333;
   outline: none;
 }
@@ -40,7 +39,6 @@
   text-decoration: none;
   width: 100%;
   height: 100%;
-  padding: 3rem 2rem;
   color: #333;
 }
 .mypage {
@@ -48,8 +46,9 @@
   flex-direction: column;
   width: 100%;
   max-width: 80rem;
-  padding: 2em 2rem 7rem;
+  padding: 6rem 2rem 7rem;
   letter-spacing: -0.1rem;
+  margin: 0 auto;
 }
 .mypage .wh_box:nth-child(1),
 .mypage .my_box:nth-child(1) {
@@ -62,7 +61,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 2rem;
+  padding: 2rem;
   border-bottom: 1px solid #d2d2d2;
 }
 .myname div:nth-child(1) {
@@ -98,7 +97,7 @@
 .myinfo {
   display: flex;
   flex-direction: column;
-  padding: 3rem 0rem;
+  padding: 2rem;
   font-size: 1.4rem;
 }
 .myinfo > div:nth-child(1) {
@@ -118,13 +117,15 @@
   letter-spacing: 0;
 }
 .my_manage {
+  border-top: 1px solid #d2d2d2;
   display: flex;
-  font-size: 1.6rem;
+  justify-content: space-between;
+  padding: 0 2rem;
+  font-size: 1.4rem;
 }
 .shipping_manage,
 .card_manage {
   display: flex;
-  width: 50%;
 }
 .shipping_manage a,
 .card_manage a {
@@ -146,6 +147,7 @@
   font-size: 1.4rem;
   color: #333;
   font-weight: 700;
+  padding: 2rem;
   justify-content: space-between;
   letter-spacing: -0.1rem;
 }
@@ -165,7 +167,7 @@
   font-size: 1.2rem;
 }
 .product_list {
-  margin: 1rem 0;
+  padding: 2rem 2rem 0;
   font-size: 1.6rem;
 }
 .mypage_title > div > img {
@@ -175,15 +177,19 @@
   margin-left: 0.5rem;
 }
 .myproduct {
+  padding: 2rem;
   display: flex;
+}
+.sub_list > .myproduct {
+  padding: 0;
 }
 .myproduct > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex: 1;
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 1.4rem;
+  font-weight: 400;
   color: #333;
 }
 .product_title {
@@ -258,20 +264,20 @@
   align-items: center;
   font-size: 1.4rem;
   font-weight: 700;
+  padding: 2rem;
   color: #999;
   padding-bottom: 2rem;
-  border-bottom: 1px solid #eaeaea;
 }
 .subtoggletxt_p {
   display: flex;
   font-size: 2rem;
   font-weight: 700;
-  margin-top: 2rem;
+  padding: 2rem;
   align-items: center;
   justify-content: space-between;
 }
 .sub_list {
-  padding: 2rem 0 0;
+  padding: 2rem;
   font-size: 2rem;
   font-weight: 700;
 }
@@ -284,15 +290,15 @@
   font-weight: 400;
 }
 .sub_list > div:nth-child(2) {
-  margin-top: 2rem;
+  margin-top: 4rem;
   text-align: right;
   font-size: 3rem;
   color: #333;
 }
 .shipping_request {
-  margin-top: 1rem;
   font-size: 1.4rem;
   color: #999;
+  padding: 1rem 2rem 2rem;
 }
 /* 주문내역 */
 .order_history_info {
@@ -321,7 +327,7 @@
 }
 .delivery_tracking {
   border: 1px solid #ccc;
-  background: #fff;
+  background: #ffe2e2;
   padding: 1rem 2rem;
   border-radius: 0.5rem;
   font-weight: 700;
@@ -333,4 +339,10 @@
 }
 .order_date {
   padding: 1rem 0;
+}
+
+@media screen and (max-width: 450px) {
+  .mypage {
+    padding: 2rem;
+  }
 }
