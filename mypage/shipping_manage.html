@@ -7,18 +7,36 @@
     <meta name="description" content="portfolio">
     <link rel="icon" type="images/png" href="images/favicon.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-    <link rel="stylesheet" href="css/survey.css">
+    <link rel="stylesheet" href="css/mypage.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://kit.fontawesome.com/7e24956d25.js" crossorigin="anonymous"></script>
     <title>배송지선택</title>
 </head>
 <body class="gray_bg">
-  <section class="shipping_select_section">
-    <div class="shipping_select_title">
-      <div>배송 정보</div>
-      <button>배송지관리</button>
+  <nav id="navbar">
+    <div class="inner mobile">
+        <div class="navbar__logo">
+            <img src="../images/logo1.png" alt="">
+            <img src="../images/logo2.png" alt="">
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__menu__item active" data-link="#div1">마이페이지</li>
+            <li class="navbar__menu__item" data-link="#resume">이벤트</li>
+            <li class="navbar__menu__item" data-link="#work">고객센터</li>
+        </ul>
     </div>
+    <a href="javascript:click()" class="navbar__toggle">
+        <span>메뉴</span>
+    </a>
+</nav>
+  <section class="title_name">
+    <div class="">
+        <a href="#">배송지 선택</a>
+    </div>
+</section>
+  <section class="mypage">
+    <button class="delivery_add">+배송지 추가하기</button>
     <ul>
       <li class="box_final">
         <div class="padding2rem">
@@ -28,10 +46,10 @@
                 <span></span>
               </a>     -->
               <div class="name">
-                <input type="radio" id="name1" name="chk_info1" checked>
-                <label for="name1" class="checkbox ">
-                    <span>김옐로</span>
-                </label>
+                <div class="shipping_manage_modify">
+                  <div>김옐로</div>
+                  <button class="delivery_modify_button">수정</button>
+                </div>
               </div>
               <div class="phone">010-1234-5678</div>
               <div class="address">(<span>13588</span>) 서울시 강남구 봉은사로 69길 37 부일빌딩 301호</div>
@@ -41,22 +59,30 @@
       </li>
       <li class="box_final">
         <div class="padding2rem">
-            <input type="radio" name="chk_info" value="HTML" class="name_input">
             <div class="customer">
+              <!-- <a class="nav_x" href="../index.html">
+                <span></span>
+                <span></span>
+              </a>     -->
               <div class="name">
-                <input type="radio" id="name2" name="chk_info1">
-                <label for="name2" class="checkbox ">
-                    <span>김먼트</span>
-                </label>
+                <div class="shipping_manage_modify">
+                  <div>김먼트</div>
+                  <button class="delivery_modify_button">수정</button>
+                </div>
               </div>
               <div class="phone">010-1234-5678</div>
-              <div class="address">(<span>13588</span>) 서울시 강남구 봉은사로 69길 37 부일빌딩 302호</div>
-              <div class="shipping_option">문 앞에 놓아주세요</div>
+              <div class="address">(<span>13588</span>) 서울시 강남구 봉은사로 69길 37 부일빌딩 301호</div>
+              <div class="shipping_option">직접 받고 부재 시 문 앞에 놓아주세요</div>
             </div>
         </div>
       </li>
     </ul>
     <!-- <section class="yello_div_button mt3rem"><button class="yello_button">저장하기</button></section> -->
 </section>
+<footer class="sub_footer">
+  <div>
+      <p>COPYRIGHT © yelloment. ALL RIGHTS RESERVED.</p>
+  </div>
+</footer>
 </body>
 </html>

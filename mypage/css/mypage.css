@@ -31,6 +31,7 @@
   border-radius: 1rem;
   width: 100%;
   margin-top: 2rem;
+  padding: 0;
   border: 1px solid #d2d2d2;
   color: #333;
   outline: none;
@@ -318,6 +319,7 @@
   font-size: 1.6rem;
   font-weight: 700;
 }
+
 .order_history_space {
   margin-top: 2rem;
   font-size: 1.4rem;
@@ -348,7 +350,54 @@
 .order_date {
   padding: 1rem 0;
 }
-
+.pay_final {
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: column;
+  position: relative;
+  background: #fff;
+  border-radius: 1rem;
+  width: 100%;
+  border: 1px solid #d2d2d2;
+}
+.pay_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  color: #999;
+  border-bottom: 1px solid #eaeaea;
+}
+/* 배송지 관리 */
+.shipping_manage_modify {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.delivery_add {
+  display: block;
+  width: 100%;
+  height: 5rem;
+  border: 1px solid #d2d2d2;
+  border-radius: 1rem;
+  background: #fff;
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+.delivery_modify_button {
+  display: block;
+  width: 45px;
+  height: 3.5rem;
+  margin-left: 8px;
+  border: 1px solid #d2d2d2;
+  border-radius: 6px;
+  background: #fff;
+  color: #333;
+  font-size: 12px;
+  font-weight: normal;
+}
 @media screen and (max-width: 450px) {
   .mypage {
     padding: 2rem;

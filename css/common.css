@@ -241,6 +241,33 @@ section {
   justify-content: center;
   align-items: center;
 }
+.del_button {
+  width: 50%;
+  height: 5rem;
+  border-radius: 1rem;
+  letter-spacing: -0.2rem;
+  border: none;
+  background: #fff;
+  color: #999;
+  border: 1px solid #d2d2d2;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  margin-right: 1rem;
+}
+.green_button {
+  width: 50%;
+  height: 5rem;
+  border-radius: 1rem;
+  letter-spacing: -0.2rem;
+  border: none;
+  background: #00b427;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  margin-right: 1rem;
+}
 .yello_button {
   width: 80%;
   padding: 1.5rem;
@@ -358,6 +385,7 @@ section {
   font-weight: 400;
   color: #999;
   letter-spacing: -0.1rem;
+  padding: 1rem 0;
 }
 .address {
   font-size: 1.4rem;
@@ -424,6 +452,24 @@ section {
 }
 .padding2rem {
   padding: 2rem;
+}
+/* 이름 */
+.name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+/* 배송지관리 */
+.shipping_select_section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 80rem;
+  padding: 2rem;
+  padding-top: 7rem;
+  letter-spacing: -0.2rem;
 }
 /* 인풋 */
 .input_title {

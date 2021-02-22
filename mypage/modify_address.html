@@ -33,51 +33,61 @@
             <span>메뉴</span>
         </a>
     </nav>
+    <section class="title_name">
+        <div class="">
+          <a href="#">마이페이지</a>
+          <img src="images/right_arrow.svg">
+          <a href="#">배송정보</a>
+        </div>
+      </section>
     <section class="mypage">
-    <div>
-      <a href="#">마이페이지</a><img src="images/right_arrow.svg"><a href="#">구독정보</a><img src="images/right_arrow.svg"><a href="#">배송정보 수정</a>
-    </div>
-    <section class="shipping_final box_final">
-        <div class="order_title">배송 정보</div>
-        <div class="info_input">
-            <div class="input_field">
+        <section class="box_final">
+            <div class="input_title">배송 정보 수정</div>
+            <div class="info_input">
+              <div class="input_field">
                 <div>이름</div>
                 <input type="text" class="width_input" placeholder="이름을 입력하세요" required="">
-            </div>
-            <div class="input_field">
+              </div>
+              <div class="input_field">
                 <div>휴대폰 번호</div>
                 <input type="text" class="width_input" placeholder="휴대폰번호를 입력하세요" required="">
+              </div>
+              <div class="input_field">
+                <div class="address_flex">
+                  <div>주소</div>
+                  <button class="address_modify_button">주소변경</button>
+                </div>
+                <button class="zipcode">
+                  <img src="../survey/images/search_ico_gray.png"><span>우편번호 찾기</span>
+                </button>
+                <div class="address_input">
+                  <input class="width_input" placeholder="기본주소">
+                  <input class="width_input" placeholder="상세주소" required="">
+                </div>
+              </div>
+             
             </div>
-            <div class="input_field">
-                <div>주소</div>
-                <input class="search_zipcode" required="">
-                <button class="gray_modify_button">우편번호 찾기</button>
-                <input class="width_input" placeholder="기본주소">
-                <input class="width_input" placeholder="상세주소" required="">
-            </div> 
-        </div>
-        <div class="order_subtitle">배송 요청 사항</div>
-        <select class="shipping_select">
-            <option>직접 받고 부재시 문 앞에 놓아주세요</option>
-            <option>문 앞에 놓아주세요</option>
-            <option>경비실에 맡겨주세요</option>
-            <option>택배함에 넣어주세요</option>
-            <option class="direct_input">직접 입력하기</option>
-        </select>
-        <textarea rows="8" cols="85" class="shipping_input" onclick="this.value=''" disabled="">내용을 입력하세요</textarea>
-        </section>
+            <div class="order_subtitle">배송 요청 사항</div>
+            <div class="shipping_text">
+              <select class="shipping_select" onchange="changeItem()">
+                <option>요청사항1</option>
+                <option>요청사항2</option>
+              </select>
+              <textarea rows="8" cols="85" class="shipping_input" onclick="this.value=''" disabled="">내용을 입력하세요</textarea>
+            </div>
+          </section>
         <section class="yello_div_button mt3rem">
-            <button class="yello_button">저장하기</button>
+<!--
+   이곳은 배송지 선택에서 수정할 때 사용하는 영역입니다.
+          <button class="del_button">삭제</button>
+          <button class="yello_button">저장</button>
+         -->
+
+          <button class="yello_button">+추가하기</button>
         </section>
     </section>
     </section>
-    <footer>
-        <div>
-            <img src="../images/logo_black.png" alt="">
-            <p>법인명(상호) : 주식회사 판다코퍼레이션 l 대표이사 정규인<br>서울특별시 강남구 봉은사로69길 37 부일빌딩 3층, 302호<br>사업자 등록번호 : 4458701182
-            </p>
-            <p>전화문의 : 070.4166.6077</p>
-        </div>
+    <footer class="sub_footer">
         <div>
             <p>COPYRIGHT © yelloment. ALL RIGHTS RESERVED.</p>
         </div>
