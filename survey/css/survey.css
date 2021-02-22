@@ -23,7 +23,16 @@ select::-ms-expand {
   max-width: 80rem;
   padding: 2rem;
   padding-top: 7rem;
-
+  letter-spacing: -0.2rem;
+  margin: 0 auto;
+}
+.shipping_select_section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 80rem;
+  padding: 2rem;
+  padding-top: 7rem;
   letter-spacing: -0.2rem;
 }
 .order > div:nth-child(1) {
@@ -499,6 +508,8 @@ input::-webkit-input-placeholder {
   font-size: 1.6rem;
   font-weight: 700;
   color: #333;
+  display: flex;
+  align-items: center;
 }
 .width_input {
   font-size: 1.6rem;

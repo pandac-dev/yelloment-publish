@@ -39,17 +39,18 @@ body {
 section {
   width: 100%;
 }
-h1 {
-  color: var(--color-red-color);
-  font-family: "Montserrat", sans-serif;
-  font-weight: 900;
-  font-size: 15vw;
-  text-align: center;
+.wh_box {
+  flex-direction: column;
+  position: relative;
+  background: #fff;
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  width: 100%;
+  margin-top: 2rem;
+  border: 1px solid #d2d2d2;
 }
-h2 {
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 3rem;
-  font-weight: 700;
+.box_image {
+  width: 10rem;
 }
 /* layout */
 .inner {
@@ -235,6 +236,7 @@ h2 {
   letter-spacing: -0.2rem;
 }
 .yello_div_button {
+  padding: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -262,17 +264,13 @@ h2 {
 }
 .box_final {
   display: flex;
+  margin-top: 2rem;
   flex-direction: column;
   position: relative;
   background: #fff;
   border-radius: 1rem;
-  padding: 3rem 2rem;
   width: 100%;
-  margin-top: 2rem;
   border: 1px solid #d2d2d2;
-}
-.box_final > label {
-  display: flex;
 }
 .order_final {
   color: #333;
@@ -280,48 +278,54 @@ h2 {
 .box_select {
   display: flex;
   align-items: center;
+  color: #333;
+  letter-spacing: -0.1rem;
   font-size: 3.6rem;
   font-weight: 700;
-}
-.box_select span:nth-child(1) {
+  padding: 2rem 2rem 0;
 }
 .box_select img {
   margin-left: 1rem;
   width: 15%;
 }
-.order_final > div:nth-child(2) {
-  margin-top: 2rem;
+.box_contents {
+  padding: 2rem;
   font-size: 1.4rem;
   color: #666;
   font-weight: 400;
+  border-bottom: 1px solid #d2d2d2;
 }
-.order_final > div:nth-child(2)::after {
-  margin: 2rem 0;
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  background: #d2d2d2;
-}
-.order_final > div:nth-child(3) {
+.box_final > div:nth-child(3) {
   display: flex;
   justify-content: space-between;
   font-size: 1.6rem;
+  padding: 2rem 2rem 0;
 }
-.order_final > div:nth-child(3) > span:nth-child(2) {
+.box_final > div:nth-child(3) > span:nth-child(2) {
   font-size: 2.4rem;
   font-weight: 700;
 }
-.order_title {
+.box_final > div:nth-child(4) {
+  display: flex;
+  justify-content: flex-end;
+  padding: 2rem;
+}
+.shipping_info {
+  padding: 2rem;
+}
+.order_title_flex {
+  padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
-  color: #333;
+  color: #999;
   font-size: 1.4rem;
   font-weight: 700;
+  border-bottom: 1px solid #d2d2d2;
 }
-.order_title > div {
+.order_title {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .order_subtitle {
   padding: 2rem 2rem 0;
@@ -333,14 +337,7 @@ h2 {
   text-decoration: none;
   color: #999;
 }
-.order_title > div {
-  display: flex;
-  padding: 2rem;
-  align-items: center;
-  width: 100%;
-  color: #999;
-  border-bottom: 1px solid #eaeaea;
-}
+
 .shipping_contents {
   padding: 2rem;
 }
@@ -370,20 +367,24 @@ h2 {
   word-break: keep-all;
   letter-spacing: -0.1rem;
 }
-.search_zipcode {
+/* .search_zipcode {
   width: 50%;
   margin-right: 1rem;
   border: 1px solid #eaeaea;
   margin-top: 1rem;
-}
+} */
 .shipping_select {
+  width: 100%;
   border: 1px solid #eaeaea;
-  margin-top: 2rem;
+  margin: 0 auto;
+  margin-top: 1rem;
   font-family: "Noto Sans KR", sans-serif;
   padding: 1rem;
 }
 .shipping_input {
+  width: 100%;
   font-family: "Noto Sans KR", sans-serif;
+  margin: 0 auto;
   padding: 1rem;
   font-size: 1.6rem;
   margin-top: 1rem;
@@ -391,7 +392,16 @@ h2 {
   color: #999;
   border: 1px solid #eaeaea;
 }
+.shipping_option {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  color: #999;
+  letter-spacing: -0.1rem;
+  margin-top: 1rem;
+}
 .width_input {
+  padding: 1rem;
   font-size: 1.6rem;
   width: 100%;
   margin-top: 1rem;
@@ -400,22 +410,75 @@ h2 {
 .width_input::placeholder {
   color: #d2d2d2;
 }
+.address_input {
+  display: none;
+}
+.address_input.open {
+  display: block;
+}
+.address_modify_button {
+  display: none;
+}
+.address_modify_button.open {
+  display: block;
+}
+.padding2rem {
+  padding: 2rem;
+}
+/* 인풋 */
+.input_title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #999;
+  padding: 2rem 2rem 0;
+}
 .input_field {
   margin-bottom: 2rem;
 }
 .input_field > div {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 700;
   color: #333;
 }
 .input_field > input {
   padding: 1rem;
 }
+.address_flex {
+  display: flex;
+  justify-content: space-between;
+}
+.info_input {
+  padding: 2rem;
+}
+.zipcode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  font-size: 1.6rem;
+  width: 100%;
+  margin-top: 1rem;
+  color: #333;
+  background: #fff;
+  border: 1px solid #eaeaea;
+}
+.zipcode.none {
+  display: none;
+}
+.zipcode img {
+  width: 3rem;
+  margin-right: 0.5rem;
+}
+.shipping_text {
+  display: block !important;
+  padding: 2rem;
+}
 .payinfo {
   width: 100%;
 }
 .payinfo ul {
   width: 100%;
+  padding: 2rem;
   font-size: 1.2rem;
   letter-spacing: 0;
   line-height: 1.2;
@@ -477,9 +540,9 @@ h2 {
 .card_design {
   max-width: 30rem;
   width: 90%;
-  height: 18rem;
+  height: 15rem;
   border-radius: 1rem;
-  margin: 2rem auto 0;
+  margin: 2rem auto;
   padding: 2rem;
   font-size: 1.6rem;
   font-weight: 500;
@@ -490,6 +553,54 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+/* 배송지 선택 */
+.name input[type="radio"] {
+  position: relative;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 2.4rem;
+  border: 1px solid #d2d2d2;
+  margin: 0;
+}
+.name input:checked {
+  position: relative;
+  border: 2px solid #2358eb;
+}
+.name input:checked::before {
+  display: block;
+  position: absolute;
+  content: "";
+  border-radius: 100%;
+  height: 12px;
+  width: 12px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  background: #2358eb;
+}
+.name input[type="checkbox"] + label {
+  display: inline-block;
+  width: 2.4rem;
+  height: 2.4rem;
+  background: #fff;
+  border: 1px solid #d2d2d2;
+  cursor: pointer;
+  border-radius: 2.4rem;
+}
+.name input[type="checkbox"] + label span {
+  position: absolute;
+  padding-left: 3.5rem;
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.name input:checked + label span {
+  color: #2358eb;
+}
+.name > label > span {
+  margin-left: 0.5rem;
 }
 /* 카드디자인 */
 .shinhan {

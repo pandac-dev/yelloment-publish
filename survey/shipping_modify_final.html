@@ -37,22 +37,22 @@
     </nav>
     <section class="order">
       <div>2021년 1월 2주 주문내역</div>
-      <section class="order_final box_final">
+      <section class="box_final">
         <div class="box_select">
           <span>더블박스</span>
           <img src="images/order_box.png" alt="">
         </div>
-        <div>과일 / 쌀 ·잡곡 / 기타 농식품</div>
+        <div class="box_contents">과일 / 쌀 ·잡곡 / 기타 농식품</div>
         <div><span>총 결제금액</span><span>37,000원</span></div>
         <div><button class="modify_button">상품 수정하기</button></div>
       </section>
       <section class="box_final">
-        <div class="order_title">
-          <div>
+        <div class="order_title_flex">
+          <div class="order_title">
             <span>배송 정보</span><button class="gray_modify_button">변경하기</button>
           </div>
          </div>
-        <div>
+        <div class="shipping_info">
           <div class="name_div">
             <span class="name">홍길동</span>
           </div>
@@ -61,6 +61,8 @@
           부일빌딩 302호</div>
         </div>
         <div class="order_subtitle">배송 요청 사항</div>
+        <div class="shipping_option">문 앞에 놓아주세요</div>
+        <!-- <div class="shipping_option">
         <select class="shipping_select">
           <option>직접 받고 부재 시 문 앞에 놓아주세요</option>
           <option>문 앞에 놓아주세요</option>
@@ -69,10 +71,11 @@
           <option>직접입력하기</option>
         </select>
         <textarea rows="8" cols="85" class="shipping_input"onclick="this.value=''">내용을 입력하세요</textarea>
+      </div> -->
       </section>
       <section class="pay_final box_final">
-        <div class="order_title">
-          <div>
+        <div class="order_title_flex">
+          <div class="order_title">
             <span>결제정보</span>
             <button class="gray_modify_button">변경하기</button>
           </div>

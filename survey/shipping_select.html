@@ -14,39 +14,47 @@
     <title>배송지선택</title>
 </head>
 <body class="gray_bg">
-  <div class="order">
+  <section class="shipping_select_section">
     <div class="shipping_select_title">배송 정보</div>
     <ul>
       <li class="box_final">
-        <label>
+        <div class="padding2rem">
             <input type="radio" name="chk_info" value="HTML" class="name_input">
             <div class="customer">
-              <a class="nav_x" href="../index.html">
+              <!-- <a class="nav_x" href="../index.html">
                 <span></span>
                 <span></span>
-              </a>    
-              <div class="name pb1rem">김옐로</div>
+              </a>     -->
+              <div class="name pb1rem">
+                <input type="radio" id="name1" name="chk_info1">
+                <label for="name1" class="checkbox ">
+                    <span>김옐로</span>
+                </label>
+              </div>
               <div class="phone pb1rem">010-1234-5678</div>
               <div class="address">(<span>13588</span>) 서울시 강남구 봉은사로 69길 37 부일빌딩 301호</div>
+              <div class="shipping_option">직접 받고 부재 시 문 앞에 놓아주세요</div>
             </div>
-        </label>
+        </div>
       </li>
       <li class="box_final">
-        <label>
+        <div class="padding2rem">
             <input type="radio" name="chk_info" value="HTML" class="name_input">
             <div class="customer">
-              <a class="nav_x" href="../index.html">
-                <span></span>
-                <span></span>
-              </a>
-              <div class="name pb1rem">김먼트</div>
+              <div class="name pb1rem">
+                <input type="radio" id="name2" name="chk_info1">
+                <label for="name2" class="checkbox ">
+                    <span>김먼트</span>
+                </label>
+              </div>
               <div class="phone pb1rem">010-1234-5678</div>
-              <div class="address">(<span>13588</span>) 서울시 강남구 봉은사로 69길 37 부일빌딩 301호</div>
+              <div class="address">(<span>13588</span>) 서울시 강남구 봉은사로 69길 37 부일빌딩 302호</div>
+              <div class="shipping_option">문 앞에 놓아주세요</div>
             </div>
-        </label>
+        </div>
       </li>
     </ul>
-    <section class="yello_div_button mt3rem"><button class="yello_button">배송지 추가하기</button></section>
-</div>
+    <!-- <section class="yello_div_button mt3rem"><button class="yello_button">저장하기</button></section> -->
+</section>
 </body>
 </html>

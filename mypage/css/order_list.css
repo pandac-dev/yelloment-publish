@@ -183,6 +183,8 @@
   display: flex;
   flex-direction: column;
   background: #fff;
+  border: 1px solid #d2d2d2;
+  border-radius: 1rem;
 }
 .list_button_p {
   width: 80%;
@@ -194,6 +196,7 @@
   border: 1px solid #d2d2d2;
   width: 100%;
   padding: 1rem;
+  letter-spacing: -0.1rem;
 }
 .pay_date span {
   color: #999;
