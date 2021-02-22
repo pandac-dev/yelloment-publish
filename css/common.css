@@ -585,13 +585,14 @@ section {
 }
 .card_design {
   max-width: 30rem;
-  width: 90%;
-  height: 15rem;
+  width: 25rem;
+  height: 17rem;
   border-radius: 1rem;
   margin: 2rem auto;
   padding: 2rem;
   font-size: 1.6rem;
   font-weight: 500;
+  letter-spacing: -0.1rem;
 }
 .card_design div {
   width: 100%;
