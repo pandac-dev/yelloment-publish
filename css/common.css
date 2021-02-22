@@ -46,8 +46,6 @@ section {
   border-radius: 1rem;
   padding: 3rem 2rem;
   width: 100%;
-  margin-top: 2rem;
-  border: 1px solid #d2d2d2;
 }
 .box_image {
   width: 10rem;
@@ -284,7 +282,7 @@ section {
   border-radius: 1rem;
   background: #d2d2d2;
   color: #333;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 700;
   border: none;
   padding: 0.5rem 1rem;
@@ -591,7 +589,7 @@ section {
   margin: 2rem auto;
   padding: 2rem;
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: -0.1rem;
 }
 .card_design div {
@@ -701,13 +699,12 @@ section {
   padding: 6rem 2rem 2rem;
   font-size: 1.8rem;
   font-weight: 700;
-  border-bottom: 1px solid #d2d2d2;
 }
 .title_name > div:nth-child(1) {
   display: flex;
   align-items: center;
   margin-top: 1rem;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 700;
 }
 .title_name > div:nth-child(1) a {

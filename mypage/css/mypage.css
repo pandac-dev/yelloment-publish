@@ -6,11 +6,29 @@
   flex-direction: column;
   position: relative;
   background: #fff;
-  border-radius: 1rem;
   width: 100%;
   margin-top: 2rem;
-  border: 1px solid #d2d2d2;
   cursor: pointer;
+  border-bottom: 2px solid #d2d2d2;
+}
+.wh_box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: #fff;
+  border-radius: 1rem;
+  width: 90%;
+  margin: 2rem auto 0;
+  padding: 0;
+  border: 1px solid #d2d2d2;
+  color: #333;
+  outline: none;
+}
+.wh_box a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  color: #333;
 }
 .order_box {
   display: flex;
@@ -23,20 +41,21 @@
   border: 1px solid #d2d2d2;
   cursor: pointer;
 }
-.wh_box {
+.mypage section:nth-child(2) {
+  margin-top: 2rem;
+}
+.home_menu {
   display: flex;
   flex-direction: column;
   position: relative;
   background: #fff;
   border-radius: 1rem;
   width: 100%;
-  margin-top: 2rem;
   padding: 0;
-  border: 1px solid #d2d2d2;
   color: #333;
   outline: none;
 }
-.wh_box a {
+.home_menu a {
   text-decoration: none;
   width: 100%;
   height: 100%;
@@ -47,13 +66,8 @@
   flex-direction: column;
   width: 100%;
   max-width: 80rem;
-  padding: 6rem 2rem 7rem;
   letter-spacing: -0.1rem;
   margin: 0 auto;
-}
-.mypage .wh_box:nth-child(1),
-.mypage .my_box:nth-child(1) {
-  margin: 0;
 }
 .myname {
   font-size: 2rem;
@@ -63,15 +77,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
-  border-bottom: 1px solid #d2d2d2;
 }
 .myname div:nth-child(1) {
   display: flex;
   align-items: center;
 }
 .myname div:nth-child(1) > span:nth-child(1) {
-  margin-right: 1rem;
-  letter-spacing: ;
+  margin-right: 0.5rem;
 }
 .myname_sub {
   display: flex;
@@ -104,11 +116,12 @@
 .myinfo > div:nth-child(1) {
   display: flex;
   font-weight: 700;
-  color: #999;
+  color: #333;
   align-items: center;
 }
 .myinfo > div:nth-child(1) > img {
-  width: 2.5rem;
+  width: 1rem;
+  margin-right: 0.5rem;
 }
 .myinfo > div:nth-child(2) {
   margin-top: 1rem;
@@ -118,28 +131,24 @@
   letter-spacing: 0;
 }
 .my_manage {
-  border-top: 1px solid #d2d2d2;
   display: flex;
-  justify-content: space-between;
   font-size: 1.4rem;
 }
 .shipping_manage,
 .card_manage {
   display: flex;
-  width: 50%;
+  width: 40%;
 }
 .shipping_manage {
-  border-right: 1px solid #d2d2d2;
 }
 .shipping_manage a,
 .card_manage a {
   display: flex;
-  justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 2rem 0rem;
+  padding: 2rem 2rem 3rem;
   text-decoration: none;
-  color: #333;
+  color: #999;
 }
 
 .shipping_manage > a > div:nth-child(2),
@@ -177,10 +186,10 @@
   font-size: 1.6rem;
 }
 .mypage_title > div > img {
-  width: 20%;
+  width: 3rem;
 }
 .mypage_title > div:nth-child(1) > div {
-  margin-left: 0.5rem;
+  margin-left: 1rem;
 }
 .myproduct {
   padding: 2rem;
@@ -350,16 +359,6 @@
 .order_date {
   padding: 1rem 0;
 }
-.pay_final {
-  display: flex;
-  margin-top: 2rem;
-  flex-direction: column;
-  position: relative;
-  background: #fff;
-  border-radius: 1rem;
-  width: 100%;
-  border: 1px solid #d2d2d2;
-}
 .pay_title {
   display: flex;
   justify-content: space-between;
@@ -421,7 +420,4 @@
   word-break: keep-all;
 }
 @media screen and (max-width: 450px) {
-  .mypage {
-    padding: 2rem;
-  }
 }
