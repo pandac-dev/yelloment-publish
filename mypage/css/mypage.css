@@ -1,3 +1,6 @@
+body {
+  height: 100%;
+}
 .yello_bg {
   background: #ffcd27;
 }
@@ -411,23 +414,97 @@
 
 .secession {
   width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 3rem 2rem;
+  padding: 3rem 0 0;
   text-align: center;
   box-sizing: border-box;
 }
-.secession h1 {
-  font-size: 2.4rem;
-  font-weight: 700;
-  word-break: keep-all;
+.secession img {
+  width: 20rem;
 }
-.secession div {
-  margin-top: 2rem;
-  font-size: 1.6rem;
+.secession_notice {
+  width: 100%;
+  font-size: 1.4rem;
   word-break: keep-all;
+  line-height: 1.2;
+  color: #666;
+  text-align: left;
+  padding: 2rem 2rem 4rem;
+  border-bottom: 4px solid #d2d2d2;
+}
+.secession_title {
+  color: #333;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.secession_notice ul {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+.red_text {
+  color: #ff0000;
+  margin-right: 1rem;
+  font-size: 1.6rem;
+}
+.subscription_confirm {
+  width: 100%;
+  padding: 4rem 2rem;
+}
+.subscription_confirm > div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.subscription_confirm > div:nth-child(2) {
+  background: #eaeaea;
+  font-size: 1.4rem;
+  color: #666;
+  margin-top: 2rem;
+  padding: 2rem 0;
+}
+.subscription_confirm > div:nth-child(1) > div:nth-child(1) {
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.subscription_confirm > div:nth-child(1) > button {
+  background-color: #fff;
+  color: #999;
+  padding: 0.5rem 1.5rem;
+  border-radius: 3rem;
+  font-weight: 700;
+  border: 2px solid #d2d2d2;
+}
+.secssion_agree {
+  width: 100%;
+  font-size: 1.6rem;
+  color: #333;
+}
+.secssion_button {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.secssion_button button {
+  width: 50%;
+  height: 5rem;
+  border: none;
+}
+.secssion_button > button:nth-child(1) {
+  background: #04bf55;
+  color: #fff;
+}
+.secssion_button > button:nth-child(2) {
+  background: #f24405;
+  color: #fff;
 }
 @media screen and (max-width: 450px) {
 }
