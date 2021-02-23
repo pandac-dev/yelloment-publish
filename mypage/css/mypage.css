@@ -508,5 +508,45 @@ body {
   background: #f24405;
   color: #fff;
 }
+/* 구독해지 */
+.unsubscribe_title {
+  position: relative;
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 700;
+  z-index: 100;
+}
+.unsubscribe_title::before {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  display: block;
+  width: 26rem;
+  height: 1.5rem;
+  background: #ffe48a;
+  z-index: -1;
+}
+.unsubscribe_text {
+  color: #999;
+  padding: 2rem;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+.unsubscribe_text > p {
+  margin-top: 2rem;
+}
+.unsubscribe_button {
+  padding: 2rem;
+  width: 100%;
+}
+.unsubscribe_button > div:nth-child(2) {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+}
+.unsubscribe_button > div:nth-child(2) > a {
+  color: #999;
+}
 @media screen and (max-width: 450px) {
 }
