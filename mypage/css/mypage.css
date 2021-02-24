@@ -139,9 +139,9 @@
 }
 .myinfo > div:nth-child(2) {
   margin-top: 1rem;
-  font-weight: 700;
+  font-weight: 400;
   color: #777;
-  font-size: 2rem;
+  font-size: 1.8rem;
   letter-spacing: 0;
 }
 .my_manage {
@@ -156,6 +156,7 @@
 }
 .shipping_manage {
   border-right: 1px solid #d2d2d2;
+  width: calc(50% -1rem);
 }
 .shipping_manage a img,
 .card_manage a img {
@@ -213,7 +214,7 @@
   margin-left: 1rem;
 }
 .myproduct {
-  padding: 2rem;
+  padding: 1rem 2rem 2rem;
   display: flex;
   justify-content: space-between;
 }
@@ -224,14 +225,26 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #333;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #999;
+}
+.gray_style {
+  filter: grayscale(100%);
+  opacity: 0.5;
+}
+.sub_product img,
+.product_price img,
+.shipping_plan img {
+  width: 2.5rem;
 }
 .product_title {
+  margin-top: 1rem;
   font-size: 1.4rem;
-  color: #999;
+  color: #333;
+  font-weight: 700;
 }
 .my_button {
   display: flex;
