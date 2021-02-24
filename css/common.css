@@ -741,8 +741,8 @@ footer > div > p {
 }
 /* 중복구독시 백그라운드 */
 .id1 {
-  background: #fff;
-  /* background: #f3e7dd; */
+  /* background: #fff; */
+  background: #f3e7dd;
 }
 .id2 {
   background: #faeef1;

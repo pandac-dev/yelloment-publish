@@ -309,7 +309,7 @@
 .subscribe_toggle.active > .handle {
   left: 50%;
 }
-.sub_info > div:nth-child(1) {
+/* .sub_info > div:nth-child(1) {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -318,7 +318,7 @@
   padding: 1rem 2rem;
   color: #999;
   border-bottom: 1px solid #eaeaea;
-}
+} */
 .subtoggletxt_p {
   display: flex;
   font-size: 2rem;
