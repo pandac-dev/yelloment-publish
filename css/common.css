@@ -739,6 +739,13 @@ footer > div > p {
   align-items: center;
   padding: 2rem;
 }
+/* 중복구독시 백그라운드 */
+.id1 {
+  background: #f3e7dd;
+}
+.id2 {
+  background: #f1d7dc;
+}
 /* 모바일 */
 @media screen and (max-width: 450px) {
   body {

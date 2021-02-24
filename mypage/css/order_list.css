@@ -130,13 +130,6 @@
   align-items: center;
   font-size: 1.2rem;
 }
-/* 주문내역 id */
-.id1 {
-  background: #f3e7dd;
-}
-.id2 {
-  background: #f1d7dc;
-}
 /* 상세내역 */
 .detail_date,
 .detail_number {

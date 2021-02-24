@@ -189,6 +189,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
+  border: 1px solid #d2d2d2;
 }
 .product_list {
   padding: 1rem 2rem 1rem;
@@ -547,6 +548,189 @@ body {
 }
 .unsubscribe_button > div:nth-child(2) > a {
   color: #999;
+}
+input {
+  appearance: none;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+.gender_radio_div {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+}
+.gender_radio_div label {
+  padding: 1rem 2.5rem 1rem 0.5rem;
+}
+.gender_radio_div input {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border-radius: 20px;
+  border: 2px solid #d2d2d2;
+  margin: 0;
+}
+
+.gender_radio_div input:checked::before {
+  display: block;
+  position: absolute;
+  content: "";
+  border-radius: 100%;
+  height: 12px;
+  width: 12px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  background: #ffcd27;
+}
+.gender_radio_div input:checked {
+  border: 2px solid #ffcd27;
+}
+.maketing_agree {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  font-size: 1.6rem;
+  color: #999;
+}
+.maketing_agree div {
+  display: flex;
+  align-items: center;
+}
+.maketing_agree input {
+  display: none;
+}
+.maketing_agree label {
+  color: #333;
+}
+.maketing_agree input[type="checkbox"] + label span {
+  display: inline-block;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin: -2px 10px 0 0;
+  vertical-align: middle;
+  border-radius: 2.4rem;
+  border: 2px solid #d2d2d2;
+  cursor: pointer;
+}
+.maketing_agree input[type="checkbox"]:checked + label span {
+  background: url(../../survey/images/survey_agree.svg) #00b327 no-repeat 5px
+    5px/13px 13px;
+  border: none;
+}
+.secession_button {
+  font-size: 1.4rem;
+  color: #999;
+  padding: 2rem;
+  position: relative;
+}
+.secession_button span {
+  position: relative;
+}
+.secession_button span > span::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  display: inline-block;
+  width: 50px;
+  height: 1px;
+  background: #d2d2d2;
+}
+/* 리뷰 */
+.myreview_div {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d2d2d2;
+  border-radius: 1rem;
+}
+.mypage .myreview_div:nth-child(1) {
+  margin-top: 0;
+}
+.myreview_date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.myreview_date > div:nth-child(1) {
+  font-size: 1.4rem;
+  color: #999;
+}
+.myreview_round {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #333;
+  display: flex;
+}
+.myreview_point {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.myreview_number_point {
+  font-size: 3.4rem;
+  font-weight: 900;
+  margin-right: 2rem;
+}
+/* 별점 */
+.fa,
+.fab,
+.fad,
+.fal,
+.far,
+.fas {
+  font-weight: 900 !important;
+}
+.maketing_agree > div {
+  display: flex;
+  align-items: center;
+}
+.maketing_agree > div > button {
+  margin-left: 1rem;
+}
+.br-theme-fontawesome-stars .br-widget {
+  height: 28px;
+  white-space: nowrap;
+}
+.br-theme-fontawesome-stars .br-widget a {
+  font: normal normal normal 30px/1 FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  text-decoration: none;
+  margin-right: 10px;
+}
+.br-theme-fontawesome-stars .br-widget a:after {
+  content: "\f005";
+  color: #d2d2d2;
+}
+.br-theme-fontawesome-stars .br-widget a.br-active:after {
+  color: #ffcd27;
+}
+.br-theme-fontawesome-stars .br-widget a.br-selected:after {
+  color: #ffcd27;
+}
+.br-theme-fontawesome-stars .br-widget .br-current-rating {
+  display: none;
+}
+.br-theme-fontawesome-stars .br-readonly a {
+  cursor: default;
+}
+@media print {
+  .br-theme-fontawesome-stars .br-widget a:after {
+    content: "\f006";
+    color: black;
+  }
+  .br-theme-fontawesome-stars .br-widget a.br-active:after,
+  .br-theme-fontawesome-stars .br-widget a.br-selected:after {
+    content: "\f005";
+    color: black;
+  }
 }
 @media screen and (max-width: 450px) {
 }
