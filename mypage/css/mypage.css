@@ -707,7 +707,7 @@ input {
 }
 .br-theme-fontawesome-stars .br-widget a:after {
   content: "\f005";
-  color: #d2d2d2;
+  color: #999;
 }
 .br-theme-fontawesome-stars .br-widget a.br-active:after {
   color: #ffcd27;
