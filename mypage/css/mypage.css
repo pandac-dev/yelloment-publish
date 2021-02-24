@@ -120,17 +120,17 @@
   display: flex;
   width: 90%;
   margin: 0 auto;
-  margin-top: 2rem;
+  margin-bottom: 1rem;
   flex-direction: column;
   padding: 1rem 2rem;
   font-size: 1.4rem;
-  background: #f6f7fa;
+  background: #333;
   border-radius: 1rem;
 }
 .myinfo > div:nth-child(1) {
   display: flex;
   font-weight: 700;
-  color: #777;
+  color: #ffd200;
   align-items: center;
 }
 .myinfo > div:nth-child(1) > img {
@@ -140,7 +140,7 @@
 .myinfo > div:nth-child(2) {
   margin-top: 1rem;
   font-weight: 400;
-  color: #777;
+  color: #d2d2d2;
   font-size: 1.8rem;
   letter-spacing: 0;
 }
