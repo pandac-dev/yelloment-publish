@@ -1,8 +1,6 @@
-body {
-  height: 100%;
-}
 .yello_bg {
-  background: #ffcd27;
+  background: #ffcd27 !important;
+  border: none !important;
 }
 .modify_section {
   padding: 7rem 2rem;
@@ -13,9 +11,8 @@ body {
   position: relative;
   background: #fff;
   width: 100%;
-  margin-top: 2rem;
   cursor: pointer;
-  border-bottom: 2px solid #d2d2d2;
+  border-bottom: 1px solid #d2d2d2;
 }
 .wh_box {
   display: flex;
@@ -121,14 +118,19 @@ body {
 }
 .myinfo {
   display: flex;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2rem;
   flex-direction: column;
-  padding: 2rem;
+  padding: 1rem 2rem;
   font-size: 1.4rem;
+  background: #f6f7fa;
+  border-radius: 1rem;
 }
 .myinfo > div:nth-child(1) {
   display: flex;
   font-weight: 700;
-  color: #333;
+  color: #777;
   align-items: center;
 }
 .myinfo > div:nth-child(1) > img {
@@ -138,40 +140,42 @@ body {
 .myinfo > div:nth-child(2) {
   margin-top: 1rem;
   font-weight: 700;
-  color: #333;
+  color: #777;
   font-size: 2rem;
   letter-spacing: 0;
 }
 .my_manage {
   display: flex;
   font-size: 1.4rem;
+  padding: 2rem;
 }
 .shipping_manage,
 .card_manage {
   display: flex;
-  width: 40%;
+  width: 50%;
 }
 .shipping_manage {
+  border-right: 1px solid #d2d2d2;
+}
+.shipping_manage a img,
+.card_manage a img {
+  width: 3rem;
+  margin-right: 0.5rem;
 }
 .shipping_manage a,
 .card_manage a {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 2rem 2rem 3rem;
+  padding: 1rem;
   text-decoration: none;
-  color: #999;
-}
-
-.shipping_manage > a > div:nth-child(2),
-.card_manage > a > div:nth-child(2) {
-  width: 0.7rem;
-  margin-left: 0.5rem;
+  color: #333;
+  font-weight: 700;
 }
 .mypage_title {
   display: flex;
   align-items: center;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   color: #333;
   font-weight: 700;
   padding: 2rem;
@@ -195,8 +199,12 @@ body {
   border: 1px solid #d2d2d2;
 }
 .product_list {
-  padding: 1rem 2rem 1rem;
-  font-size: 1.6rem;
+  padding: 1rem;
+  font-size: 1.4rem;
+  background: #f6f7fa;
+  color: #777;
+  margin: 0rem 1rem 1rem;
+  border-radius: 0.5rem;
 }
 .mypage_title > div > img {
   width: 3rem;
@@ -228,10 +236,11 @@ body {
 .my_button {
   display: flex;
   padding: 0.5rem 1rem;
+  background: #fff;
   color: #333;
   font-size: 1.4rem;
   font-weight: 700;
-  border: none;
+  border: 1px solid #d2d2d2;
   border-radius: 2rem;
   justify-content: center;
   letter-spacing: -0.15rem;
