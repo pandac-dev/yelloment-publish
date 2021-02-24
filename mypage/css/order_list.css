@@ -109,11 +109,11 @@
 }
 .delivery_div {
   text-align: right;
-  border-top: 1px solid #999;
-  padding: 2rem 0 0;
+  border-top: 1px solid #d2d2d2;
+  padding: 2rem;
 }
 .delivery_tracking {
-  border: 1px solid #999;
+  border: 1px solid #d2d2d2;
   background: transparent;
   padding: 1rem 2rem;
   border-radius: 0.5rem;
