@@ -693,7 +693,6 @@ section {
 .title_name {
   display: flex;
   justify-content: center;
-  background: #fff;
   padding: 6rem 2rem 2rem;
   font-size: 1.8rem;
   font-weight: 700;
@@ -759,6 +758,7 @@ footer > div > p {
     opacity: 1;
   }
   #navbar {
+    border-bottom: 1px solid #d2d2d2;
     display: block;
     z-index: 10;
     box-sizing: border-box;

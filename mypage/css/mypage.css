@@ -116,6 +116,7 @@
   width: 3%;
 }
 .myinfo {
+  border: 1px solid #d2d2d2;
   display: flex;
   width: 90%;
   margin: 0 auto;
@@ -216,7 +217,7 @@
   justify-content: space-between;
 }
 .sub_list > .myproduct {
-  padding: 0;
+  padding: 0 2rem;
 }
 .myproduct > div {
   display: flex;
@@ -224,7 +225,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 400;
   color: #999;
 }
@@ -239,7 +240,7 @@
 }
 .product_title {
   margin-top: 1rem;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #333;
   font-weight: 700;
 }
