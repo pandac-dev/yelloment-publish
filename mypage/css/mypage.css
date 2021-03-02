@@ -12,7 +12,7 @@
   background: #fff;
   width: 100%;
   cursor: pointer;
-  border-bottom: 1px solid #d2d2d2;
+  border-bottom: 5px solid #eaeaea;
 }
 .wh_box {
   display: flex;
@@ -59,7 +59,6 @@
   padding: 0;
   color: #333;
   outline: none;
-  border: 1px solid #d2d2d2;
 }
 .home_menu a {
   text-decoration: none;
@@ -124,13 +123,12 @@
   flex-direction: column;
   padding: 1rem 2rem;
   font-size: 1.4rem;
-  background: #333;
   border-radius: 1rem;
 }
 .myinfo > div:nth-child(1) {
   display: flex;
   font-weight: 700;
-  color: #ffd200;
+  color: #333;
   align-items: center;
 }
 .myinfo > div:nth-child(1) > img {
@@ -140,7 +138,7 @@
 .myinfo > div:nth-child(2) {
   margin-top: 1rem;
   font-weight: 400;
-  color: #d2d2d2;
+  color: #333;
   font-size: 1.8rem;
   letter-spacing: 0;
 }
@@ -155,7 +153,6 @@
   width: 50%;
 }
 .shipping_manage {
-  border-right: 1px solid #d2d2d2;
   width: calc(50% -1rem);
 }
 .shipping_manage a img,
@@ -168,7 +165,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 1rem;
+  padding: 1rem 2rem;
   text-decoration: none;
   color: #333;
   font-weight: 700;
