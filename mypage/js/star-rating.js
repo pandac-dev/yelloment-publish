@@ -590,7 +590,7 @@
   $.fn.ratingLocales.en = {
       defaultCaption: '{rating} Stars',
       starCaptions: {
-          0.5: '그냥그래요',
+          0.5: 'Half Star',
           1: 'One Star',
           1.5: 'One & Half Star',
           2: 'Two Stars',

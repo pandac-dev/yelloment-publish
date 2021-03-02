@@ -87,6 +87,8 @@
         </div>
     </footer>
     <script src="js/star-rating.js"></script>
+
+    <input id="input-id" name="input-name" type="number" class="rating" min=1 max=10 step=2 data-size="lg" data-rtl="true">
 <script src="js/theme.js"></script>
 
 <script>
@@ -98,6 +100,16 @@
 
       });
   });
+
+  var a = document.querySelector("#input-4-ltr-star-lg")
+  a.addEventListener("click", function(e) {
+    console.log("test")
+    console.log(e)
+    console.log(a)
+    console.log(a.value)
+    console.log(e.target.value)
+
+  })
   </script>
 </body>
 </html>

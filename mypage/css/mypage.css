@@ -701,63 +701,9 @@ input {
   align-items: center;
 }
 .myreview_number_point {
-  font-size: 3.4rem;
+  font-size: 8vw;
   font-weight: 900;
   margin-right: 2rem;
-}
-/* 별점 */
-.fa,
-.fab,
-.fad,
-.fal,
-.far,
-.fas {
-  font-weight: 900 !important;
-}
-.maketing_agree > div {
-  display: flex;
-  align-items: center;
-}
-.maketing_agree > div > button {
-  margin-left: 1rem;
-}
-.br-theme-fontawesome-stars .br-widget {
-  height: 28px;
-  white-space: nowrap;
-}
-.br-theme-fontawesome-stars .br-widget a {
-  font: normal normal normal 30px/1 FontAwesome;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  text-decoration: none;
-  margin-right: 10px;
-}
-.br-theme-fontawesome-stars .br-widget a:after {
-  content: "\f005";
-  color: rgba(0, 0, 0, 0.2);
-}
-.br-theme-fontawesome-stars .br-widget a.br-active:after {
-  color: #ffcd27;
-}
-.br-theme-fontawesome-stars .br-widget a.br-selected:after {
-  color: #ffcd27;
-}
-.br-theme-fontawesome-stars .br-widget .br-current-rating {
-  display: none;
-}
-.br-theme-fontawesome-stars .br-readonly a {
-  cursor: default;
-}
-@media print {
-  .br-theme-fontawesome-stars .br-widget a:after {
-    content: "\f006";
-    color: black;
-  }
-  .br-theme-fontawesome-stars .br-widget a.br-active:after,
-  .br-theme-fontawesome-stars .br-widget a.br-selected:after {
-    content: "\f005";
-    color: black;
-  }
 }
 @media screen and (max-width: 450px) {
 }
