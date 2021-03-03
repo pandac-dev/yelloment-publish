@@ -696,7 +696,7 @@ section {
 .title_name {
   display: flex;
   justify-content: center;
-  padding: 6rem 2rem 2rem;
+  padding: 7rem 2rem 2rem;
   font-size: 1.8rem;
   font-weight: 700;
 }
@@ -741,14 +741,7 @@ footer > div > p {
   align-items: center;
   padding: 2rem;
 }
-/* 중복구독시 백그라운드 */
-.id1 {
-  /* background: #fff; */
-  background: #f3e7dd;
-}
-.id2 {
-  background: #faeef1;
-}
+
 /* 모바일 */
 @media screen and (max-width: 450px) {
   body {

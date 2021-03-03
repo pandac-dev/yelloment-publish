@@ -23,7 +23,7 @@
   flex-direction: column;
   width: 100%;
   max-width: 80rem;
-  padding: 2rem 2rem 7rem;
+  padding: 2rem 0 7rem;
   letter-spacing: -0.1rem;
   margin: 0 auto;
 }
@@ -36,16 +36,17 @@
   padding: 2rem 0 0;
 }
 .order_date {
-  padding: 1rem 0;
+  padding: 1rem 2rem;
+  color: #999;
+  font-size: 1.4rem;
+  font-weight: 400;
 }
 .order_box {
   display: flex;
   flex-direction: column;
   position: relative;
   background: #fff;
-  border-radius: 1rem;
   width: 100%;
-  border: 1px solid #d2d2d2;
   cursor: pointer;
 }
 .myname {
@@ -56,7 +57,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
-  border-bottom: 1px solid #999;
 }
 .myname div:nth-child(1) {
   display: flex;
