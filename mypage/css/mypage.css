@@ -398,9 +398,6 @@
   border-bottom: 1px solid #eaeaea;
 }
 /* 배송지 관리 */
-.shipping_manage_section {
-  padding: 2rem;
-}
 .shipping_manage_modify {
   width: 100%;
   display: flex;
@@ -408,7 +405,8 @@
 }
 .delivery_add {
   display: block;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto 3rem;
   height: 5rem;
   border: 1px solid #d2d2d2;
   border-radius: 1rem;
