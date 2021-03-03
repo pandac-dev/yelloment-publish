@@ -597,6 +597,9 @@ section {
   flex-direction: column;
   justify-content: space-between;
 }
+.card_design div span img {
+  width: 5rem;
+}
 /* 배송지 선택 */
 .name input[type="radio"] {
   position: relative;
