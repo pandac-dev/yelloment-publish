@@ -26,6 +26,7 @@
   padding: 2rem 0 7rem;
   letter-spacing: -0.1rem;
   margin: 0 auto;
+  padding-bottom: 12rem;
 }
 .container > section:nth-child(1) {
   padding: 0;
@@ -90,7 +91,7 @@
 .order_history_info {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 0 2rem 2rem;
   font-weight: 400;
 }
 .sub_round {
@@ -109,8 +110,8 @@
 }
 .delivery_div {
   text-align: right;
-  border-top: 1px solid #999;
-  padding: 2rem;
+  border-top: 1px solid #eaeaea;
+  padding: 1rem 2rem;
 }
 .delivery_tracking {
   border: 1px solid #999;

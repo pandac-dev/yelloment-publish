@@ -266,6 +266,9 @@ section {
   margin-right: 1rem;
 }
 .yello_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 80%;
   padding: 1.5rem;
   border-radius: 3rem;
@@ -276,6 +279,10 @@ section {
   font-size: 2rem;
   font-weight: 700;
   text-align: center;
+}
+.yello_button img {
+  margin-right: 0.5rem;
+  width: 1.2rem;
 }
 .gray_modify_button {
   border-radius: 1rem;
@@ -421,7 +428,7 @@ section {
   font-size: 1.2rem;
   color: #999;
   letter-spacing: -0.1rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 .width_input {
   padding: 1rem;
@@ -723,9 +730,6 @@ footer {
   font-size: 1.2rem;
   text-align: left;
 }
-footer > div {
-  padding: 3rem;
-}
 footer > div > img {
   max-width: 10rem;
   padding-bottom: 2rem;
@@ -736,6 +740,12 @@ footer > div > p {
   line-height: 1.5;
 }
 .sub_footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 12rem;
   display: flex;
   justify-content: center;
   align-items: center;

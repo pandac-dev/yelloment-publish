@@ -1,0 +1,21 @@
+.qna {
+  display: flex;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.1rem;
+  background: rgb(225, 245, 251);
+  background: linear-gradient(
+    0deg,
+    rgba(225, 245, 251, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border-bottom: 1px solid #eaeaea;
+  img {
+    width: 7rem;
+    margin-right: 1rem;
+  }
+}

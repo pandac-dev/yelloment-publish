@@ -1,0 +1,26 @@
+.qna {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.1rem;
+  background: #e1f5fb;
+  background: -webkit-gradient(linear, left bottom, left top, from(#e1f5fb), to(white));
+  background: linear-gradient(0deg, #e1f5fb 0%, white 100%);
+  border-bottom: 1px solid #eaeaea;
+}
+
+.qna img {
+  width: 7rem;
+  margin-right: 1rem;
+}
+/*# sourceMappingURL=sass.css.map */
