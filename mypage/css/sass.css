@@ -13,9 +13,9 @@
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: -0.1rem;
-  background: #e1f5fb;
-  background: -webkit-gradient(linear, left bottom, left top, from(#e1f5fb), to(white));
-  background: linear-gradient(0deg, #e1f5fb 0%, white 100%);
+  background: #eaebeb;
+  background: -webkit-gradient(linear, left bottom, left top, from(#eaebeb), to(white));
+  background: linear-gradient(0deg, #eaebeb 0%, white 100%);
   border-bottom: 1px solid #eaeaea;
 }
 
