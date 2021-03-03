@@ -15,15 +15,12 @@
   border-bottom: 5px solid #eaeaea;
 }
 .wh_box {
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   position: relative;
   background: #fff;
-  border-radius: 1rem;
-  width: 90%;
-  margin: 2rem auto 0;
   padding: 0;
-  border: 1px solid #d2d2d2;
   color: #333;
   outline: none;
 }
@@ -38,14 +35,9 @@
   flex-direction: column;
   position: relative;
   background: #fff;
-  border-radius: 1rem;
   width: 100%;
   padding: 2rem;
-  border: 1px solid #d2d2d2;
   cursor: pointer;
-}
-.mypage section:nth-child(2) {
-  margin-top: 2rem;
 }
 .home_menu {
   display: flex;
@@ -672,38 +664,43 @@ input {
   border: 1px solid #d2d2d2;
   border-radius: 1rem;
 }
-.mypage .myreview_div:nth-child(1) {
-  margin-top: 0;
-}
-.myreview_date {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-}
-.myreview_date > div:nth-child(1) {
-  font-size: 1.4rem;
-  color: rgba(0, 0, 0, 0.4);
-}
+
 .myreview_round {
-  margin-top: 2rem;
   font-size: 1.6rem;
   font-weight: 700;
   color: #333;
   display: flex;
-  padding: 0 2rem 1rem;
 }
 .myreview_point {
-  padding: 2rem;
+  padding-top: 2rem;
   display: flex;
   justify-content: left;
   align-items: center;
 }
 .myreview_number_point {
-  font-size: 8vw;
+  color: #333;
+  font-size: 3rem;
   font-weight: 900;
   margin-right: 2rem;
+}
+.star_point {
+  display: flex;
+  margin-top: 0.2rem;
+}
+.order_date {
+  padding: 1rem 2rem;
+  color: #999;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.order_wrap {
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 2rem 0 0;
+  transform: rotate(0.03deg);
+}
+.container > section:nth-child(1) {
+  padding: 0;
 }
 @media screen and (max-width: 450px) {
 }

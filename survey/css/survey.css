@@ -591,6 +591,9 @@ input::-webkit-input-placeholder {
 .card_enrollment > div {
   padding: 1rem;
 }
+.shipping_select_section > ul > li {
+  margin-top: 2rem;
+}
 .shipping_select_title {
   display: flex;
   align-items: center;
@@ -598,12 +601,16 @@ input::-webkit-input-placeholder {
   font-size: 2rem;
   font-weight: 700;
   color: #333;
+  padding: 0 2rem;
 }
 .shipping_select_title > button {
   background: #2358eb;
   color: #fff;
   border: none;
   padding: 1rem 2rem;
+}
+.customer {
+  padding: 2rem;
 }
 .swiper-container {
   width: 100%;

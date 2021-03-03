@@ -463,7 +463,6 @@ section {
   flex-direction: column;
   width: 100%;
   max-width: 80rem;
-  padding: 2rem;
   padding-top: 7rem;
   letter-spacing: -0.2rem;
 }
@@ -706,6 +705,8 @@ section {
   margin-top: 1rem;
   font-size: 1.4rem;
   font-weight: 700;
+  justify-content: center;
+  text-align: center;
 }
 .title_name > div:nth-child(1) a {
   text-decoration: none;
