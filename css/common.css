@@ -43,7 +43,6 @@ section {
   flex-direction: column;
   position: relative;
   background: #fff;
-  border-radius: 1rem;
   padding: 3rem 2rem;
   width: 100%;
 }
@@ -597,7 +596,7 @@ section {
   justify-content: space-between;
 }
 .card_design div span img {
-  width: 5rem;
+  width: 4rem;
 }
 /* 배송지 선택 */
 .name input[type="radio"] {

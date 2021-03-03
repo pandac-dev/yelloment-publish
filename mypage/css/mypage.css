@@ -15,7 +15,7 @@
   border-bottom: 5px solid #eaeaea;
 }
 .wh_box {
-  margin-top: 1rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -698,8 +698,16 @@ input {
   padding: 2rem 0 0;
   transform: rotate(0.03deg);
 }
-.container > section:nth-child(1) {
-  padding: 0;
+.review_top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+  background: #0099ff;
 }
 @media screen and (max-width: 450px) {
 }
