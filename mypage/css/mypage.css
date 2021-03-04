@@ -705,14 +705,37 @@ input {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 2rem 2rem 0;
   color: #333;
-  font-size: 2rem;
+  padding:0 2rem;
+  font-size: 3rem;
   font-weight: 700;
+  letter-spacing: -0.1rem;
+}
+.review_top>div > div:nth-child(1){
+  position: relative;
+  z-index: 2;
+}
+.review_top>div > div:nth-child(1)::before{
+  content: '';
+  display: block;
+  width:140px;
+  height:1.5rem;
+  background: #ffe48a;
+  position: absolute;
+  bottom:0;
+  z-index: -1;
+}
+.review_top>div > div:nth-child(2){
+  margin-top:1rem;
+  font-size:1.6rem;
+  color:#777;
+  word-break: keep-all;
+  font-weight: 400;
+  line-height: 1.2;
 }
 .review_detail_img{
   margin-right:2rem;
-  width:12rem;
+  width:10rem;
 }
 @media screen and (max-width: 450px) {
 }
