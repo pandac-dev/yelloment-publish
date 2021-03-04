@@ -278,6 +278,7 @@
   border: 1px solid #d2d2d2;
 }
 .subscribe_toggle {
+  margin-left: 1rem;
   padding: 0;
   position: relative;
   border: none;
@@ -431,7 +432,7 @@
 }
 /* 탈퇴페이지 */
 
-.secession {
+.withdrawal {
   width: 100%;
   max-width: 80rem;
   margin: 0 auto;
@@ -443,10 +444,10 @@
   text-align: center;
   box-sizing: border-box;
 }
-.secession img {
+.withdrawal img {
   width: 20rem;
 }
-.secession_notice {
+.withdrawal {
   width: 100%;
   font-size: 1.4rem;
   word-break: keep-all;
@@ -456,12 +457,12 @@
   padding: 2rem 2rem 4rem;
   border-bottom: 4px solid #d2d2d2;
 }
-.secession_title {
+.withdrawal_title {
   color: #333;
   font-size: 2rem;
   font-weight: 700;
 }
-.secession_notice ul {
+.withdrawal_notice ul {
   margin-top: 1rem;
   font-size: 1.3rem;
   line-height: 1.5;
@@ -486,6 +487,7 @@
   color: #666;
   margin-top: 2rem;
   padding: 2rem 0;
+  text-align: center;
 }
 .subscription_confirm > div:nth-child(1) > div:nth-child(1) {
   color: #333;
@@ -500,30 +502,30 @@
   font-weight: 700;
   border: 2px solid #d2d2d2;
 }
-.secssion_agree {
+.withdrawal_agree {
   width: 100%;
   font-size: 1.6rem;
   color: #333;
 }
-.secssion_button {
+.withdrawal_button {
   margin-top: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
-.secssion_button button {
+.withdrawal_button button {
   width: 50%;
   height: 5rem;
   font-size: 1.6rem;
   font-weight: 700;
   border: none;
 }
-.secssion_button > button:nth-child(1) {
+.withdrawal_button > button:nth-child(1) {
   background: #04bf55;
   color: #fff;
 }
-.secssion_button > button:nth-child(2) {
+.withdrawal_button > button:nth-child(2) {
   background: #f24405;
   color: #fff;
 }
@@ -638,20 +640,26 @@ input {
   border: none;
 }
 .secession_button {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   color: #999;
   padding: 2rem;
   position: relative;
 }
-.secession_button span {
+.secession_button img {
+  width: 4rem;
+  margin: right 0.5em;rem;
+}
+.secession_button > span {
+  display: flex;
   position: relative;
+  align-items: center;
 }
 .secession_button span > span::before {
   content: "";
   position: absolute;
-  bottom: -3px;
+  bottom: 0;
   display: inline-block;
-  width: 50px;
+  width: 62px;
   height: 1px;
   background: #d2d2d2;
 }
