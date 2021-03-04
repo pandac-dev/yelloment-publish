@@ -116,8 +116,9 @@
 .delivery_tracking {
   border: 1px solid #999;
   background: transparent;
-  padding: 1rem 2rem;
+  padding: 1rem;
   border-radius: 0.5rem;
+  letter-spacing: -0.1rem;
   font-weight: 700;
 }
 .order_more_button {

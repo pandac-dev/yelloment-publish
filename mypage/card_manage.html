@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
+    <meta name="description" content="portfolio">
+    <link rel="icon" type="images/png" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="css/mypage.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="css/sass.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/7e24956d25.js" crossorigin="anonymous"></script>
+    <title>카드관리</title>
+</head>
+<body class="gray_bg">
+  <nav id="navbar">
+    <div class="inner mobile">
+        <div class="navbar__logo">
+            <img src="../images/logo1.png" alt="">
+            <img src="../images/logo2.png" alt="">
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__menu__item active" data-link="#div1">마이페이지</li>
+            <li class="navbar__menu__item" data-link="#resume">이벤트</li>
+            <li class="navbar__menu__item" data-link="#work">고객센터</li>
+        </ul>
+    </div>
+    <a href="javascript:click()" class="navbar__toggle">
+        <span>메뉴</span>
+    </a>
+</nav>
+  <section class="title_name">
+    <div class="">
+        <a href="#">결제정보</a>
+    </div>
+  </section>
+  <section class="card_info"><img src="images/card_info.svg">구독결제중인 카드는 <span>삭제</span>되지 않습니다.</section>
+  <section class="shipping_manage_section">
+    <button class="delivery_add"><img src="images/card_icon.svg">카드 추가하기</button>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <button class="green_bg"><img src="images/product_style.svg" alt="">구독중</button>
+          <div class="card_design shinhan">
+            <div>
+              <span>신한카드(카드명)</span>
+              <span><img src="../survey/images/card_ic.svg" alt=""></span>
+              <span>1234-5678-9012-＊＊＊＊</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <button><img src="images/delect_icon.svg">삭제</button>
+        <div class="card_design woori">
+          <div>
+            <span>우리카드(카드명)</span>
+            <span><img src="../survey/images/card_ic.svg" alt=""></span>
+            <span>1234-5678-9012-＊＊＊＊</span>
+          </div>
+        </div>
+        </div>
+        <div class="swiper-slide">
+          <button><img src="images/delect_icon.svg">삭제</button>
+          <div class="card_design hyundae">
+            <div>
+              <span>현대카드(카드명)</span>
+              <span><img src="../survey/images/card_ic.svg" alt=""></span>
+              <span>1234-5678-9012-＊＊＊＊</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- <section class="yello_div_button mt3rem"><button class="yello_button">저장하기</button></section> -->
+</section>
+<footer class="sub_footer">
+  <div>
+      <p>COPYRIGHT © yelloment. ALL RIGHTS RESERVED.</p>
+  </div>
+</footer>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
+</script>
+</body>
+</html>
