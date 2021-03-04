@@ -279,6 +279,7 @@ section {
   font-size: 1.6rem;
   font-weight: 700;
   text-align: center;
+  margin: 0 auto;
 }
 .yello_button img {
   margin-right: 0.5rem;
@@ -300,15 +301,17 @@ section {
   background: #fff;
   border-radius: 1rem;
   width: 100%;
+  margin-top: 2rem;
 }
 .order_final {
   color: #333;
 }
 .box_select {
+  transform: rotate(0.03deg);
   display: flex;
   align-items: center;
   color: #333;
-  letter-spacing: -0.1rem;
+  letter-spacing: -0.2rem;
   font-size: 3.6rem;
   font-weight: 700;
   padding: 2rem 2rem 0;
@@ -317,16 +320,34 @@ section {
   margin-left: 1rem;
   width: 15%;
 }
+.product_list {
+  display: inline-block;
+  border: 2px solid #eaeaea;
+  padding: 1rem;
+  font-size: 1.4rem;
+  color: #777;
+  margin: 0rem 2rem 2rem;
+  border-radius: 0.5rem;
+  transform: rotate(0.03deg);
+}
 .box_contents {
-  padding: 2rem;
+  margin-top: 1rem;
   font-size: 1.4rem;
   color: #666;
   font-weight: 400;
   border-bottom: 1px solid #d2d2d2;
 }
+.box_contents > div:nth-child(2) {
+  display: flex;
+  padding: 0 2rem 1rem;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 0;
+}
 .box_final > div:nth-child(3) {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 1.6rem;
   padding: 2rem 2rem 0;
 }
@@ -428,7 +449,6 @@ section {
   font-size: 1.2rem;
   color: #999;
   letter-spacing: -0.1rem;
-  margin-top: 2rem;
 }
 .width_input {
   padding: 1rem;

@@ -190,16 +190,6 @@
   font-size: 1.2rem;
   border: 1px solid #d2d2d2;
 }
-.product_list {
-  display: inline-block;
-  border: 2px solid #eaeaea;
-  padding: 1rem;
-  font-size: 1.4rem;
-  color: #777;
-  margin: 0rem 2rem 2rem;
-  border-radius: 0.5rem;
-  transform: rotate(0.03deg);
-}
 .mypage_title > div > img {
   width: 3rem;
 }
@@ -325,7 +315,7 @@
 .sub_list {
   padding: 2rem;
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 400;
 }
 .sub_list > div > span:nth-child(2) {
   margin-left: 1rem;
@@ -335,13 +325,13 @@
   font-size: 1.2rem;
   font-weight: 400;
 }
-.sub_list > div:nth-child(2) {
+.sub_list > div:nth-child(3) {
   margin-top: 4rem;
   text-align: right;
   font-size: 2.6rem;
   color: #333;
 }
-.sub_list > div:nth-child(2) > span {
+.sub_list > div:nth-child(3) > span {
   font-size: 2rem;
 }
 .shipping_request {
@@ -455,7 +445,7 @@
   color: #666;
   text-align: left;
   padding: 2rem 2rem 4rem;
-  border-bottom: 4px solid #d2d2d2;
+  /* border-bottom: 4px solid #d2d2d2; */
 }
 .withdrawal_title {
   color: #333;
@@ -540,11 +530,9 @@
 .unsubscribe_title::before {
   position: absolute;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
   content: "";
   display: block;
-  width: 26rem;
+  width: 24rem;
   height: 1.5rem;
   background: #ffe48a;
   z-index: -1;
@@ -561,7 +549,9 @@
 .unsubscribe_button {
   padding: 2rem;
   width: 100%;
+  text-align: center;
 }
+.unsubscribe_button button{text-align: center;}
 .unsubscribe_button > div:nth-child(2) {
   margin-top: 2rem;
   font-size: 1.4rem;
@@ -713,11 +703,14 @@ input {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 2rem;
-  color: #fff;
+  padding: 2rem 2rem 0;
+  color: #333;
   font-size: 2rem;
   font-weight: 400;
-  background: #0099ff;
+}
+.review_detail_img{
+  margin-right:2rem;
+  width:12rem;
 }
 @media screen and (max-width: 450px) {
 }

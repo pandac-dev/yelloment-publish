@@ -1,3 +1,11 @@
+.order_box > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .qna {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,22 +58,9 @@
 .review_point {
   font-size: 2rem;
 }
-.delivery_add {
-  display: flex;
-  width: 90%;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto 3rem;
-  height: 5rem;
-  border: 1px solid #d2d2d2;
-  border-radius: 1rem;
-  background: #fff;
-  font-size: 1.6rem;
-  font-weight: normal;
-}
+
 .delivery_add img {
   width: 3rem;
-  margin-right: 1rem;
 }
 
 .card_info {
