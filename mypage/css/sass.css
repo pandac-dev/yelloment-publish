@@ -1,9 +1,7 @@
-.order_box > div {
+.order_box div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .qna {
@@ -13,22 +11,16 @@
   padding: 1rem 2rem;
   margin-bottom: 2rem;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: -0.1rem;
   background: #eaebeb;
-  background: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    from(#eaebeb),
-    to(white)
-  );
+  background: -webkit-gradient(linear, left bottom, left top, from(#eaebeb), to(white));
   background: linear-gradient(0deg, #eaebeb 0%, white 100%);
   border-bottom: 1px solid #eaeaea;
 }
@@ -46,21 +38,29 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0 2rem;
   font-size: 2rem;
 }
 
+.review_detail button {
+  background: #2358eb;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+}
+
 .review_point {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 .delivery_add img {
   width: 3rem;
+  margin-right: 1rem;
 }
 
 .card_info {
@@ -68,8 +68,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 1.6rem;
   color: #777;
   padding: 0 2rem;
@@ -95,8 +95,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .card_number {
@@ -116,11 +116,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 0.5rem;
   border: none;
   background: #e94c2e;

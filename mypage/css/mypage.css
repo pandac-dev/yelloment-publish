@@ -397,7 +397,9 @@
   justify-content: space-between;
 }
 .delivery_add {
-  display: block;
+  display:flex;
+  justify-content: center;
+  align-items: center;
   width: 90%;
   margin: 0 auto 3rem;
   height: 5rem;
@@ -706,7 +708,7 @@ input {
   padding: 2rem 2rem 0;
   color: #333;
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 700;
 }
 .review_detail_img{
   margin-right:2rem;
