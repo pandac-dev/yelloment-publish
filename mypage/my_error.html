@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
+    <meta name="description" content="portfolio">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="css/mypage.css">
+    <script src="https://kit.fontawesome.com/7e24956d25.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/sass.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/star-rating.css">
+    <script src="../js/nav.js" defer></script>
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <title>개인정보 수정</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav id="navbar">
+        <div class="inner mobile">
+            <a href="#" class="backbutton"><img src="images/right_arrow.svg" alt=""></a>
+            <div class="navbar__logo">
+                <img src="../images/logo1.png" alt="">
+                <img src="../images/logo2.png" alt="">
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__menu__item active" data-link="#div1">마이페이지</li>
+                <li class="navbar__menu__item" data-link="#resume">이벤트</li>
+                <li class="navbar__menu__item" data-link="#work">고객센터</li>
+            </ul>
+        </div>
+        <a href="javascript:click()" class="navbar__toggle">
+            <span>메뉴</span>
+        </a>
+    </nav>
+    <section class="title_name">
+      <div class="">
+          <a href="#">페이지</a>
+      </div>
+    </section>
+    <section class="error">
+      <div>
+        <img src="images/error.png" alt="">
+      </div>
+      <div>리뷰가 없습니다.</div>
+    </section>
+    <footer class="sub_footer">
+      <div>
+          <p>COPYRIGHT © yelloment. ALL RIGHTS RESERVED.</p>
+      </div>
+  </footer>
+    <script src="js/star-rating.js"></script>
+    <script src="js/theme.js"></script>
+    <script>
+      $(document).ready(function(){
+          $('.kv-ltr-theme-svg-star').rating({
+              hoverOnClear: false,
+              theme: 'krajee-svg',
+              showCaption: false
+    
+          });
+      });
+      </script>
+</body>
+</html>
