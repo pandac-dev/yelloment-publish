@@ -78,6 +78,10 @@
   letter-spacing: -0.1rem;
 }
 
+.review_point > div:nth-child(2) img {
+  width: 5rem;
+}
+
 .review_point > div:nth-child(2) span:nth-child(3) {
   font-size: 3rem;
 }

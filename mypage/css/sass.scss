@@ -58,6 +58,9 @@
   color: #777;
   > div {
     &:nth-child(2) {
+      img {
+        width: 5rem;
+      }
       font-size: 5rem;
       padding: 0 2rem;
       font-weight: 700;
