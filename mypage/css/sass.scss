@@ -35,24 +35,65 @@
   align-items: center;
   padding: 2rem;
   font-size: 2rem;
+  div {
+    div {
+      &:nth-child(2) {
+        font-size: 1.4rem;
+        color: #777;
+        font-weight: 400;
+        margin-top: 0.5rem;
+      }
+    }
+  }
   button {
     background: #2358eb;
     color: #fff;
     border: none;
     padding: 1rem 2rem;
+    border-radius: 1rem;
   }
 }
 .review_point {
-  div {
-    div {
-      &:nth-child(1) {
-        padding: 0 2rem 2rem;
+  font-size: 1.6rem;
+  color: #777;
+  > div {
+    &:nth-child(2) {
+      font-size: 5rem;
+      padding: 0 2rem;
+      font-weight: 700;
+      color: #333;
+      letter-spacing: -0.1rem;
+      span {
+        &:nth-child(3) {
+          font-size: 3rem;
+        }
       }
     }
   }
-  font-size: 2rem;
 }
-.review_point:nth-child(1) {
+.review_div {
+  margin-top: 3rem;
+}
+.review_starpoint_div {
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.review_input {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 3rem;
+  div {
+    font-size: 1.4rem;
+    color: #777;
+  }
+  form {
+    margin-top: 1rem;
+  }
+  textarea {
+    width: 100%;
+  }
 }
 //카드관리
 .delivery_add img {

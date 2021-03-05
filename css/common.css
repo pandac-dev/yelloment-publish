@@ -444,6 +444,7 @@ section {
   border: 1px solid #eaeaea;
 }
 .shipping_option {
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   font-size: 1.2rem;
