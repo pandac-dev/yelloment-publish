@@ -1,4 +1,4 @@
-.order_box div {
+.order_box > div:nth-child(1) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,6 +61,8 @@
   background: #2358eb;
   color: #fff;
   border: none;
+  font-size: 1.4rem;
+  font-weight: 700;
   padding: 1rem 2rem;
   border-radius: 1rem;
 }
@@ -68,6 +70,10 @@
 .review_point {
   font-size: 1.6rem;
   color: #777;
+}
+
+.review_point > div:nth-child(1) {
+  margin: 0 2rem 3rem;
 }
 
 .review_point > div:nth-child(2) {
@@ -84,6 +90,10 @@
 
 .review_point > div:nth-child(2) span:nth-child(3) {
   font-size: 3rem;
+}
+
+.review_point > div:last-child {
+  margin-top: 3rem;
 }
 
 .review_div {
@@ -120,6 +130,8 @@
 
 .review_input textarea {
   width: 100%;
+  font-size: 1.6rem;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 .delivery_add img {
@@ -219,6 +231,31 @@
 .error div:nth-child(2) {
   margin-top: 2rem;
   font-size: 3rem;
+}
+
+.review_box {
+  position: relative;
+  background: #fff;
+  width: 100%;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+.review_box > div:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.review_box > div:nth-child(2) {
+  margin-top: 2rem;
+  font-weight: 400;
 }
 
 .green_bg {
