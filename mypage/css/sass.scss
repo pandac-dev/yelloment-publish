@@ -1,7 +1,9 @@
 .order_box {
-  div {
-    display: flex;
-    justify-content: space-between;
+  > div {
+    &:nth-child(1) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }
 
@@ -49,6 +51,8 @@
     background: #2358eb;
     color: #fff;
     border: none;
+    font-size: 1.4rem;
+    font-weight: 700;
     padding: 1rem 2rem;
     border-radius: 1rem;
   }
@@ -57,6 +61,9 @@
   font-size: 1.6rem;
   color: #777;
   > div {
+    &:nth-child(1) {
+      margin: 0 2rem 3rem;
+    }
     &:nth-child(2) {
       img {
         width: 4rem;
@@ -71,6 +78,9 @@
           font-size: 3rem;
         }
       }
+    }
+    &:last-child {
+      margin-top: 3rem;
     }
   }
 }
@@ -96,6 +106,8 @@
   }
   textarea {
     width: 100%;
+    font-size: 1.6rem;
+    font-family: "Noto Sans KR", sans-serif;
   }
 }
 //카드관리
@@ -160,13 +172,31 @@
   align-items: center;
   div {
     img {
-      width: 15rem;
+      width: 10rem;
     }
     &:nth-child(2) {
       margin-top: 2rem;
       font-size: 3rem;
     }
   }
+}
+.review_box {
+  > div {
+    &:nth-child(1) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &:nth-child(2) {
+      margin-top: 2rem;
+      font-weight: 400;
+    }
+  }
+  position: relative;
+  background: #fff;
+  width: 100%;
+  padding: 2rem;
+  cursor: pointer;
 }
 .green_bg {
   background: #04bf55 !important;

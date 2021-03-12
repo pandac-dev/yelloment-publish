@@ -90,17 +90,18 @@ section {
   font-weight: 900;
   color: var(--color-black);
   z-index: 1;
+}
+#navbar.navbar--dark {
   background: #fff;
 }
-
-#navbar.navbar--dark img:nth-child(1) {
+/* #navbar.navbar--dark img:nth-child(1) {
   transition: all 1s ease;
   opacity: 0;
 }
 #navbar.navbar--dark img:nth-child(2) {
   transition: all 1s ease;
   opacity: 1;
-}
+} */
 #navbar .inner {
   display: flex;
   justify-content: space-between;
@@ -108,12 +109,12 @@ section {
 }
 .navbar__logo {
   position: relative;
-  top: -2rem;
+  top: 0rem;
 }
 .navbar__logo img {
   transition: all 1s ease;
-  width: 10rem;
-  position: absolute;
+  width: 6rem;
+  position: relative;
   top: 0;
 }
 .navbar__logo img:nth-child(2) {
@@ -284,6 +285,26 @@ section {
 .yello_button img {
   margin-right: 0.5rem;
   width: 1.2rem;
+}
+.plus_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  padding: 1.5rem;
+  border-radius: 3rem;
+  letter-spacing: -0.2rem;
+  border: none;
+  background: #ffcd27;
+  color: #333;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto;
+}
+.plus_button img {
+  margin-right: 1rem;
+  width: 3rem;
 }
 .gray_modify_button {
   border-radius: 1rem;
@@ -689,6 +710,55 @@ section {
   background: #333;
   color: #fff;
 }
+.epost {
+  background: #ef2f24;
+  color: #fff;
+}
+.bccard {
+  background: #fff;
+  border: 1px solid #999;
+  color: #333;
+}
+.kjcard {
+  background: #ef8424;
+  color: #fff;
+}
+.samsungcard {
+  background: #0c4ca3;
+  color: #fff;
+}
+.lottecard {
+  background: #805e6c;
+  color: #fff;
+}
+.shcard {
+  background: #7c9cd0;
+  color: #fff;
+}
+.citicard {
+  background: #8b132d;
+  color: #fff;
+}
+.nhcard {
+  background: #098105;
+  color: #fff;
+}
+.jbcard {
+  background: #f16378;
+  color: #fff;
+}
+.jjcard {
+  background: #efdb24;
+  color: #333;
+}
+.hanacard {
+  background: #00907f;
+  color: #fff;
+}
+.kbcard {
+  background: #766c62;
+  color: #fff;
+}
 /* 상세보기 dot */
 .dot_p {
   position: relative;
@@ -794,12 +864,16 @@ footer > div > p {
     opacity: 1;
   }
   #navbar {
-    border-bottom: 1px solid #d2d2d2;
     display: block;
     z-index: 10;
     box-sizing: border-box;
     padding: 0;
-    height: 5rem;
+    height: 6rem;
+    transition: all 0.5s ease;
+    border: 0px solid #d2d2d2;
+  }
+  #navbar.navbar--dark {
+    border-bottom: 1px solid #d2d2d2;
   }
   #navbar .inner {
     width: 100%;
@@ -809,19 +883,18 @@ footer > div > p {
     display: block;
     position: absolute;
     text-align: center;
-    top: 0.5rem;
     left: 2rem;
     z-index: 2;
   }
   .navbar__logo img {
     position: relative;
-    width: 12rem;
+    width: 6rem;
   }
-  .navbar__logo img:nth-child(2) {
+  /* .navbar__logo img:nth-child(2) {
     position: absolute;
     width: 12rem;
     left: 0;
-  }
+  } */
   .navbar__menu::before {
     content: "";
     display: block;
@@ -860,8 +933,9 @@ footer > div > p {
   .navbar__toggle {
     display: block;
     position: absolute;
-    top: 0rem;
+    top: 50%;
     right: 1rem;
+    transform: translate(0, -50%);
     display: flex;
     width: 50px;
     height: 50px;
@@ -910,5 +984,9 @@ footer > div > p {
   .navbar__toggle.open > span::after {
     top: 0;
     transform: rotate(-45deg);
+  }
+  footer {
+    background: #ffc600;
+    padding: 2rem;
   }
 }

@@ -30,6 +30,9 @@
   height: 100%;
   color: #333;
 }
+.wh_box a .product_list{
+  margin:0 2rem;
+}
 .order_box {
   display: flex;
   flex-direction: column;
