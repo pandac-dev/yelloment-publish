@@ -823,12 +823,30 @@ footer {
   font-size: 1.2rem;
   text-align: left;
 }
-footer > div > img {
-  max-width: 10rem;
-  padding-bottom: 2rem;
+.footer_info {
   position: relative;
-  width: 30%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 1rem;
+  z-index: 200;
 }
+.footer_info a {
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.footer_info > span:nth-child(2) > span:nth-child(1) {
+  margin-right: 0.5rem;
+}
+.footer_info > span > img {
+  max-width: 10rem;
+  position: relative;
+  width: 100%;
+  margin-right: 2rem;
+}
+
 footer > div > p {
   line-height: 1.5;
 }
