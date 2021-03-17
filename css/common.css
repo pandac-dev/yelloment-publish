@@ -904,8 +904,9 @@ footer > div > p {
     z-index: 2;
   }
   .navbar__logo img {
+    margin-top: 0.5rem;
     position: relative;
-    width: 6rem;
+    width: 5rem;
   }
   /* .navbar__logo img:nth-child(2) {
     position: absolute;
