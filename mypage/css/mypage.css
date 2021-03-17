@@ -30,8 +30,8 @@
   height: 100%;
   color: #333;
 }
-.wh_box a .product_list{
-  margin:0 2rem;
+.wh_box a .product_list {
+  margin: 0 2rem;
 }
 .order_box {
   display: flex;
@@ -70,21 +70,21 @@
   letter-spacing: -0.1rem;
   margin: 0 auto;
 }
-.product_modify_page{
+.product_modify_page {
   display: flex;
   flex-direction: column;
   max-width: 80rem;
-  margin-bottom:2rem;
+  margin-bottom: 2rem;
   letter-spacing: -0.1rem;
 }
-.product_modify_button{
-  margin-bottom:13rem;
+.product_modify_button {
+  margin-bottom: 13rem;
 }
-.modify_hope_date > div:nth-child(1){
-  margin-top:4rem;
-  padding:0 2rem;
-  font-size:1.6rem;
-  color:#777;
+.modify_hope_date > div:nth-child(1) {
+  margin-top: 4rem;
+  padding: 0 2rem;
+  font-size: 1.6rem;
+  color: #777;
 }
 
 .myname {
@@ -110,8 +110,18 @@
   display: flex;
   align-items: center;
 }
-.myname_sub > span:nth-child(2) {
+.myname_sub > .kakaologin {
   background: #ffcd27;
+  padding: 0.6rem 0.6rem;
+  display: flex;
+  font-size: 1.4rem;
+  border-radius: 0.5rem;
+  align-items: center;
+  margin-left: 1rem;
+}
+.myname_sub > .naverlogin {
+  background: #01c73c;
+  color: #fff;
   padding: 0.6rem 0.6rem;
   display: flex;
   font-size: 1.4rem;
@@ -417,7 +427,7 @@
   justify-content: space-between;
 }
 .delivery_add {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 90%;
@@ -573,7 +583,9 @@
   width: 100%;
   text-align: center;
 }
-.unsubscribe_button button{text-align: center;}
+.unsubscribe_button button {
+  text-align: center;
+}
 .unsubscribe_button > div:nth-child(2) {
   margin-top: 2rem;
   font-size: 1.4rem;
@@ -725,34 +737,34 @@ input {
   align-items: center;
   width: 100%;
   color: #333;
-  padding:0 2rem;
+  padding: 0 2rem;
   font-size: 3rem;
   font-weight: 700;
   letter-spacing: -0.1rem;
 }
-.review_top>div > div:nth-child(1){
+.review_top > div > div:nth-child(1) {
   position: relative;
   z-index: 2;
 }
-.review_top>div > div:nth-child(1)::before{
-  content: '';
+.review_top > div > div:nth-child(1)::before {
+  content: "";
   display: block;
-  width:140px;
-  height:1.5rem;
+  width: 140px;
+  height: 1.5rem;
   background: #ffe48a;
   position: absolute;
-  bottom:0;
+  bottom: 0;
   z-index: -1;
 }
-.review_top>div > div:nth-child(2){
-  margin-top:1rem;
-  font-size:1.6rem;
-  color:#777;
+.review_top > div > div:nth-child(2) {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  color: #777;
   word-break: keep-all;
   font-weight: 400;
   line-height: 1.2;
 }
-.review_detail_img{
-  margin-right:2rem;
-  width:10rem;
+.review_detail_img {
+  margin-right: 2rem;
+  width: 10rem;
 }
