@@ -1,14 +1,6 @@
 /* global */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 :root {
-  /* color */
-  --color-bg-white: #ffffff;
-  --color-black: #333333;
-  --color-red-color: #ff4200;
-  --color-green-color: #4eac62;
-  --color-bg-gray: #efefef;
-  /* background */
-  /* font weight */
 }
 .gray_bg {
   background: #f1f5f5;
@@ -88,7 +80,7 @@ section {
   top: 0;
   padding: 1rem;
   font-weight: 900;
-  color: var(--color-black);
+  color: #333;
   z-index: 1;
 }
 #navbar.navbar--dark {
@@ -134,6 +126,10 @@ section {
   cursor: pointer;
   /* transition: all 1s ease-out; */
 }
+.navbar__menu__item a {
+  text-decoration: none;
+  color: #333;
+}
 .navbar__menu__item::after {
   content: "";
   display: block;
@@ -145,10 +141,10 @@ section {
   transition: all 500ms ease-out;
 }
 .navbar__menu__item:hover {
-  color: var(--color-red-color);
+  color: #ff4200;
 }
 .navbar__menu__item.active {
-  color: var(--color-red-color);
+  color: #ff4200;
 }
 .navbar__menu__item.active::after,
 .navbar__menu__item:hover:after {
@@ -160,7 +156,14 @@ section {
   left: 0;
   margin-top: 4px;
 
-  background: var(--color-red-color);
+  background: #ff4200;
+}
+.navbar__menu__logout {
+  position: relative;
+  padding: 0.8rem 1.2rem;
+  margin: 0 0.8rem;
+  cursor: pointer;
+  transition: all 1s ease-out;
 }
 .navbar__toggle {
   display: none;
@@ -286,22 +289,7 @@ section {
   margin-right: 0.5rem;
   width: 1.2rem;
 }
-.plus_button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  padding: 1.5rem;
-  border-radius: 3rem;
-  letter-spacing: -0.2rem;
-  border: none;
-  background: #ffcd27;
-  color: #333;
-  font-size: 1.6rem;
-  font-weight: 700;
-  text-align: center;
-  margin: 0 auto;
-}
+
 .plus_button img {
   margin-right: 1rem;
   width: 3rem;
@@ -827,7 +815,7 @@ footer {
   font-size: 1.2rem;
   text-align: left;
   width: 100%;
-  height: 15rem;
+  height: 18rem;
   background: #efdb24;
 }
 footer > div {
@@ -851,7 +839,7 @@ footer > div {
   margin-right: 0.5rem;
 }
 .footer_info > span > img {
-  max-width: 10rem;
+  max-width: 4rem;
   position: relative;
   width: 100%;
   margin-right: 2rem;
@@ -958,6 +946,16 @@ footer > div > p {
   }
   .navbar__menu__item:last-child {
     padding-bottom: 30rem;
+  }
+  .navbar__menu__logout {
+    padding: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 2rem;
+    color: #fff;
+    background: #ff4200;
+    text-align: center;
   }
   .navbar__toggle {
     display: block;
