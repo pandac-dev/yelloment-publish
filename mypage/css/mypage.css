@@ -70,6 +70,23 @@
   letter-spacing: -0.1rem;
   margin: 0 auto;
 }
+.product_modify_page{
+  display: flex;
+  flex-direction: column;
+  max-width: 80rem;
+  margin-bottom:2rem;
+  letter-spacing: -0.1rem;
+}
+.product_modify_button{
+  margin-bottom:13rem;
+}
+.modify_hope_date > div:nth-child(1){
+  margin-top:4rem;
+  padding:0 2rem;
+  font-size:1.6rem;
+  color:#777;
+}
+
 .myname {
   font-size: 2rem;
   font-weight: 700;
@@ -642,7 +659,6 @@ input {
 }
 .secession_button img {
   width: 4rem;
-  margin: right 0.5em;rem;
 }
 .secession_button > span {
   display: flex;
@@ -739,6 +755,4 @@ input {
 .review_detail_img{
   margin-right:2rem;
   width:10rem;
-}
-@media screen and (max-width: 450px) {
 }

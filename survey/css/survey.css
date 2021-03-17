@@ -213,7 +213,7 @@ select::-ms-expand {
 }
 .main__survey {
   margin: 0 auto;
-  max-width: 100rem;
+  max-width: 80rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -326,8 +326,8 @@ select::-ms-expand {
   content: "";
   display: block;
   position: absolute;
-  top: 1.5rem;
-  width: 65%;
+  bottom: 0;
+  width: 45%;
   height: 2rem;
   background: #ffe58f;
   border-radius: 5px;
@@ -339,7 +339,7 @@ select::-ms-expand {
     width: 0;
   }
   100% {
-    width: 65%;
+    width: 45%;
   }
 }
 
@@ -468,10 +468,12 @@ select::-ms-expand {
 .agree_check input[type="checkbox"] + label span,
 .disagree_check input[type="checkbox"] + label span {
   position: absolute;
+  margin-top:0.2rem;
   padding-left: 3.5rem;
   display: block;
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color:#333;
 }
 
 .agree_check input[type="checkbox"]:checked + label {
@@ -796,7 +798,7 @@ input::-webkit-input-placeholder {
   padding: 5rem 2rem 0;
 }
 .result_title {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 700;
   color: #333;
   letter-spacing: -0.15rem;
@@ -805,7 +807,7 @@ input::-webkit-input-placeholder {
   margin-top: 2rem;
   display: flex;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 .result_radio > span {
   color: #333;
@@ -837,7 +839,7 @@ input::-webkit-input-placeholder {
   background: #ffcd27;
 }
 .result_composition {
-  padding: 5rem 2rem 3rem;
+  padding: 5rem 2rem 0;
   display: flex;
   flex-direction: column;
 }
@@ -896,6 +898,7 @@ input::-webkit-input-placeholder {
   padding: 5rem 2rem;
 }
 .result_cost {
+  width:100%;
   padding: 5rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -931,7 +934,19 @@ input::-webkit-input-placeholder {
 .optional {
   display: none;
 }
-
+.desire_div{
+  width:100%;
+  margin-top:2rem;
+  padding:0 2rem;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+}
+.desired-delivery-date{font-size:2rem;margin-bottom:1rem;}
+.desire_div > select{
+  width:40%;
+  height:3rem;
+}
 @media screen and (max-width: 450px) {
   .main__survey .content h3,
   .health_survey_p .content h3 {
@@ -940,4 +955,18 @@ input::-webkit-input-placeholder {
   .login__button {
     flex-direction: column;
   }
+  .login__button button:nth-child(1) {
+    margin-right: 0;
+  }
+  .underbar::after {
+    width: 65%;
+  }
+  @keyframes underbar {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 65%;
+    }
+}
 }
