@@ -21,6 +21,9 @@ body {
   width: 120rem;
   margin: 0 auto;
 }
+.en_title_p {
+  display: flex;
+}
 .en_title {
   font-family: "Playfair Display", serif;
   font-size: 14rem;
@@ -52,6 +55,7 @@ body {
 }
 .curation_char img {
   width: 50%;
+  min-width: 15rem;
   height: auto;
 }
 .curation_button {
@@ -247,23 +251,33 @@ body {
   width: 100%;
 }
 .curation_div2 {
+  position: relative;
   margin-top: 20rem;
+  height: 190vh;
 }
 .curation_div2_wrapper {
-  display: flex;
   margin-top: 20rem;
 }
 .curation_div2_text {
   width: 80%;
   margin: 0 2rem;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   display: flex;
   align-items: flex-end;
   line-height: 1.6;
   opacity: 0.8;
 }
+.curation_div2_img_wrapper {
+  width: 70%;
+  height: 80vh;
+  overflow: hidden;
+  position: absolute;
+  left: 40%;
+  bottom: 40rem;
+}
 .curation_div2_img_wrapper img {
-  width: 145%;
+  width: 100%;
+  transform: scale(1.1);
 }
 .curation_div3 {
   margin-top: 20rem;
@@ -278,10 +292,14 @@ body {
 }
 .curation_div3_img_wrapper {
   text-align: right;
+  height: 70vh;
+  overflow: hidden;
+  margin-top: 4rem;
 }
 .curation_div3_img_wrapper img {
-  width: 100%;
-  margin-top: 4rem;
+  width: 110%;
+  position: relative;
+  top: -200px;
 }
 .boxmenu {
   padding-top: 20rem;
@@ -632,6 +650,9 @@ body {
   .wrapper {
     height: 100%;
   }
+  .en_title_p {
+    flex-direction: column;
+  }
   .en_title {
     width: 100%;
     font-size: 4rem;
@@ -659,6 +680,7 @@ body {
   }
   .curation_div2 {
     margin-top: 0rem;
+    height: 80vh;
   }
   .curation_div3 {
     margin-top: 10rem;
@@ -673,6 +695,9 @@ body {
   .curation_div2_img_wrapper {
     margin-top: 4rem;
     width: 100vw;
+    left: 2rem;
+    height: auto;
+    bottom: 0;
   }
   .curation_div2_img_wrapper img {
     width: 100%;
