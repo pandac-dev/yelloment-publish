@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 html {
   font-size: 10px;
 }
@@ -162,25 +163,6 @@ select::-ms-expand {
   height: 5px;
   background: #333;
   border-radius: 1rem;
-}
-.survey_nav {
-  width: 100%;
-  height: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.gray_bar {
-  width: 100%;
-  height: 1rem;
-  background: #eaeaea;
-  border-radius: 1rem;
-}
-.yellow_bar {
-  width: 0;
-  height: 100%;
-  background: #ffcd27;
-  transition: all 0.3s ease;
 }
 .per25 {
   width: 25%;
@@ -468,12 +450,12 @@ select::-ms-expand {
 .agree_check input[type="checkbox"] + label span,
 .disagree_check input[type="checkbox"] + label span {
   position: absolute;
-  margin-top:0.2rem;
+  margin-top: 0.2rem;
   padding-left: 3.5rem;
   display: block;
   font-size: 1.6rem;
   font-weight: 400;
-  color:#333;
+  color: #333;
 }
 
 .agree_check input[type="checkbox"]:checked + label {
@@ -898,7 +880,7 @@ input::-webkit-input-placeholder {
   padding: 5rem 2rem;
 }
 .result_cost {
-  width:100%;
+  width: 100%;
   padding: 5rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -934,18 +916,21 @@ input::-webkit-input-placeholder {
 .optional {
   display: none;
 }
-.desire_div{
-  width:100%;
-  margin-top:2rem;
-  padding:0 2rem;
+.desire_div {
+  width: 100%;
+  margin-top: 2rem;
+  padding: 0 2rem;
   display: flex;
   justify-content: start;
   flex-direction: column;
 }
-.desired-delivery-date{font-size:2rem;margin-bottom:1rem;}
-.desire_div > select{
-  width:40%;
-  height:3rem;
+.desired-delivery-date {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.desire_div > select {
+  width: 40%;
+  height: 3rem;
 }
 @media screen and (max-width: 450px) {
   .main__survey .content h3,
@@ -968,5 +953,5 @@ input::-webkit-input-placeholder {
     100% {
       width: 65%;
     }
-}
+  }
 }

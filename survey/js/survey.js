@@ -1,8 +1,8 @@
 const healthBtn = document.querySelectorAll(".health_div");
 const healthLabel = document.querySelectorAll(".health_check input")
 const healthImgAll = document.querySelectorAll(".health_img")
-const disagreeDiv = document.querySelector(".disagree_check");
-const disagree = document.querySelector(".disagree_check input");
+const disagreeDiv = document.querySelector(".none_check");
+const disagree = document.querySelector(".none_check input");
 
 function clickBtnHandler(){
     const healthImg = this.querySelector(".health_div img");

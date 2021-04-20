@@ -4,6 +4,7 @@
 //   Splitting();
 // });
 //스크롤 반응하는 네비게이션 만들기
+console.log('#navbar');
 const navbar = document.querySelector('#navbar');
 const navbarHeight =navbar.getBoundingClientRect().height;
 document.addEventListener('scroll', function(){

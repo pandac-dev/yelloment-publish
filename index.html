@@ -1,189 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <meta content="yes" name="apple-mobile-web-app-capable" />
-    <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
-    <meta name="description" content="portfolio">
-    <link rel="icon" type="images/png" href="images/favicon.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <script src="https://kit.fontawesome.com/7e24956d25.js" crossorigin="anonymous"></script>
+    <meta
+      content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no"
+      name="viewport"
+    />
+    <meta name="description" content="portfolio" />
+    <link rel="icon" type="images/png" href="images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/7e24956d25.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/main.js" defer></script>
     <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/splitting.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/scrolla.jquery.min.js"></script>
     <title>yelloment</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- navbar -->
     <nav id="navbar">
-        <div class="inner">
-            <div class="navbar__logo">
-                <a href="index.html">
-                <img src="images/logo1.png" alt="">
-                <!-- <img src="images/logo2.png" alt=""> -->
-            </a>
-            </div>
-            <ul class="navbar__menu">
-                <li class="navbar__menu__item active">홈</li>
-                <li class="navbar__menu__item"><a href="subpage/cueat_info.html">큐잇소개</a></li>
-                <li class="navbar__menu__item"><a href="subpage/qna.html">고객센터</a></li>
-                <li class="navbar__menu__item">로그인</li>
-                <li class="navbar__menu__logout">로그아웃</li>
-            </ul>
+      <div class="inner">
+        <div class="navbar__logo">
+          <a href="index.html">
+            <img src="images/cueatlogo.svg" alt="" />
+            <!-- <img src="images/logo2.png" alt=""> -->
+          </a>
         </div>
-        <a href="javascript:click()" class="navbar__toggle">
-            <span>메뉴</span>
-        </a>
+        <ul class="navbar__menu">
+          <li class="navbar__menu__item active">홈</li>
+          <li class="navbar__menu__item">
+            <a href="subpage/cueat_info.html">큐잇소개</a>
+          </li>
+          <li class="navbar__menu__item">
+            <a href="subpage/qna.html">고객센터</a>
+          </li>
+          <li class="navbar__menu__item">로그인</li>
+          <li class="navbar__menu__logout">로그아웃</li>
+        </ul>
+      </div>
+      <a href="javascript:click()" class="navbar__toggle">
+        <span>메뉴</span>
+      </a>
     </nav>
     <section class="visual">
-        <ul class="slide">
-            <li>
-                <div class="slide_div">
-                    <div class="slide_title">
-                        <div>나에게 딱 맞는<br><span class="yello_text">농산물의 시작</span></div>
-                        <div>품질 좋은 농산물만 담아 정기적으로 배송합니다</div>
-                    </div>
-                    <div class="slide_img">
-                        <img src="images/main_slide00.jpg" alt="visual01">
-                    </div>
+      <ul class="slide">
+        <li>
+          <div class="slide_div">
+            <div class="slide_title">
+              <div>
+                나에게 딱 맞는<br />
+                <span class="yello_text">농산물 소비의 시작</span>
+              </div>
+              <div>
+                양도, 맛도, 영양도 나에게<br />딱 필요한 농산물만 만나보세요
+              </div>
+              <div class="main__visual">
+                <button
+                  type="button"
+                  onclick="location.href='survey/survey01.html'"
+                  class="plus_button"
+                >
+                  큐잇 시작하기
+                </button>
+              </div>
+            </div>
+            <div class="slide_img"></div>
+          </div>
+        </li>
+        <!-- <li class="join_plus">
+          <div class="slide_div">
+            <div class="slide_title">
+              <div>
+                신규구독<br />
+                <span class="yello_join">특별혜택</span>
+              </div>
+              <div>구독하고 10%할인받자</div>
+            </div>
+            <div class="slide_img">
+              <img src="images/main_slide04.png" alt="visual01" />
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="slide_div">
+            <div class="slide_title">
+              <div>
+                진한 달콤함<br />
+                <span class="appelmango">애플망고</span>
+                <span class="origin">(페루산)</span>
+              </div>
+              <div>1~2월에는 페루산 망고가 제철을 맞아 가장 달콤합니다</div>
+            </div>
+            <div class="slide_img">
+              <img src="images/main_slide03.jpg" alt="visual01" />
+            </div>
+          </div>
+        </li> -->
+      </ul>
+    </section>
+    <section class="curation_info">
+      <div class="wrapper">
+        <div class="text_area">
+          <div class="curation_info_title">
+            <div class="en_title">
+              Curation<br />
+              What you Eat
+            </div>
+            <div class="curation_char">
+              <img src="images/mainchar.png" alt="" />
+            </div>
+          </div>
+
+          <div>
+            <div class="ko_title">큐잇은 식생활을 큐레이션 합니다</div>
+            <div class="ko_p">
+              큐잇은 쌀, 과일, 채소 등의 품질좋은 농산물을<br />
+              주 1회 보내드리는 농산물 정기구독 서비스입니다<br />
+              <br />
+              큐잇 추천시스템이 몇 가지 설문을 통해<br />
+              고객님께 알맞은 농산물 패키지를 구성해 드려요
+            </div>
+            <button class="curation_button">큐레이션 받기</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="curation_3c">
+      <div class="curation_div1">
+        <div class="wrapper">
+          <div class="text_area">
+            <div class="en_title">
+              How much<br />
+              you eat
+            </div>
+            <div>
+              <div class="ko_title">소비량을 추천합니다</div>
+              <div class="ko_p">
+                매번 필요하지 않은 양까지 구매하고 남은<br />
+                농산물들을 처리하느라 애를 먹고 있진 않나요?<br />
+                큐잇은 나의 소비 패턴을 파악하여<br />
+                매주 필요한 만큼만 꼭 맞게 보내드려요.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="curation_div1_img_wrapper">
+          <div>
+            <img src="images/curation_div1_001.jpg" alt="" />
+          </div>
+          <div>
+            <img src="images/curation_div1_002.jpg" alt="" />
+          </div>
+          <div>
+            <img src="images/curation_div1_003.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="curation_div2">
+        <div class="wrapper">
+          <div class="text_area">
+            <div class="en_title">
+              The variety <br />
+              you eat
+            </div>
+            <div>
+              <div class="ko_title">품종을 추천합니다</div>
+              <div class="ko_p">
+                늘 먹고 있지만 농산물에는 여러 가지 품종이 있고<br />
+                품종마다 조금씩 다른 특징이 있다는 걸<br />
+                아는 사람은 많지 않아요.
+              </div>
+            </div>
+          </div>
+          <div class="curation_div2_wrapper">
+            <div class="curation_div2_text">
+              큐잇이 추천하는 다양한 품종을 경험하면,<br />
+              나에게 꼭 맞는 품종을 만나게 될 거에요.
+            </div>
+            <div class="curation_div2_img_wrapper">
+              <img src="images/curation_div2_001.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="curation_div3">
+        <div class="wrapper">
+          <div class="text_area">
+            <div class="en_title">
+              New experience <br />
+              in life
+            </div>
+            <div class="curation_div3_wrapper">
+              <div class="curation_div3_text_wrapper">
+                <div class="ko_title">경험을 추천합니다</div>
+                <div class="ko_p">
+                  바쁜 일상에 쌀이나 과일, 채소 등이 떨어지지 않게 장을 보는
+                  것,<br />
+                  어떤 게 좋은 농산물인지 몰라서 장볼 때마다 난감한 것,<br />
+                  최소 수량이 너무 많아서 구매한 농산물을 자주 버리게 되는 것
+                  등등..<br />
+                  농산물을 구매하고 이용하는 것은 생각보다 많은 어려움이
+                  있어요.<br />
+                  <br />
+                  큐잇의 농산물 정기구독은 나에게 꼭 필요한 농산물과 양을
+                  추천합니다.<br />
+                  매번 농산물을 구매하는 것에 대한 스트레스를 줄이는 것은<br />
+                  사소해 보이지만 삶의 새로운 시간을 찾아드릴 거에요.
                 </div>
-            </li>
-            <li class="join_plus">
-                <div class="slide_div">
-                    <div class="slide_title">
-                        <div>
-                           신규구독<br>
-                            <span class="yello_join">특별혜택</span>
-                        </div>
-                        <div>구독하고 10%할인받자</div>
-                    </div>
-                    <div class="slide_img">
-                        <img src="images/main_slide04.png" alt="visual01">
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="slide_div">
-                    <div class="slide_title">
-                        <div>
-                            진한 달콤함<br>
-                            <span class="appelmango">애플망고</span>
-                            <span class="origin">(페루산)</span>
-                        </div>
-                        <div>1~2월에는 페루산 망고가 제철을 맞아 
-                            가장 달콤합니다</div>
-                    </div>
-                    <div class="slide_img">
-                        <img src="images/main_slide03.jpg" alt="visual01">
-                    </div>
-                </div>
-            </li>
-            
+                <button class="curation_button">큐잇 영상 보기</button>
+              </div>
+              <div class="curation_div3_img_wrapper">
+                <img src="images/curation_div3_001.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="boxmenu">
+      <div class="section__title">
+        <h2>가격대별 메뉴 구성</h2>
+        <p>큐잇만의 특별한 큐레이션 경험을 즐기세요</p>
+      </div>
+      <div class="container" id="work">
+        <ul class="tabs">
+          <li class="tab-link active" data-tab="tab-1">싱글</li>
+          <li class="tab-link" data-tab="tab-2">더블</li>
+          <li class="tab-link" data-tab="tab-3">패밀리</li>
         </ul>
-         <section class="main__visual">
-       <button type="button" onclick="location.href='survey/survey01.html'" class="plus_button">구독 시작하기</button>
-      </section>
+      </div>
+      <div class="work__projects active" id="tab-1">
+        <img src="images/single.jpg" alt="" />
+      </div>
+      <div class="work__projects" id="tab-2">
+        <img src="images/double.jpg" alt="" />
+      </div>
+      <div class="work__projects" id="tab-3">
+        <img src="images/family.jpg" alt="" />
+      </div>
     </section>
-    <section class="yello_character">
-        <div class="character01">
-            <img src="images/logo1.png" alt="">
-            <h2>구독서비스의 특징</h2>
+    <section class="yello_banner_p">
+      <div class="yello_banner">
+        <div class="wrapper">
+          <div class="yello_banner_text">
+            <div>나에게 딱 맞는 농산물을 만나보세요</div>
+            <button>큐잇 시작하기</button>
+          </div>
+          <div>
+            <img src="images/mainvisual07.png" alt="" />
+          </div>
         </div>
-        <div class="character02">
-            <div>
-                <img src="images/slide01.png" alt="visual01">
-                <a href="#">#큐레이션</a>
-                <div class="txt">
-                    <div>몇 가지 질문을 통해<br><span>고객님의 패키지를 구성해 드려요</span></div>
-                </div>
-            </div>
-            <div>
-                <img src="images/slide02.png" alt="visual01">
-                <a href="#">#매주 혹은 2주</a>
-                <div class="txt">
-                    <div>고객의 사정에 따라<br>
-                        <span>매주or격주로 큐잇이 배송됩니다</span></div>
-                </div>
-            </div>
-            <div>
-                <img src="images/slide03.png" alt="visual01">
-                <a href="#">#새로운 즐거움</a>
-                <div class="txt">
-                    <div>오직 큐잇에서만 만날 수 있는<br>
-                        <span>매주 새로운 테마와 구성해요</span></div>
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
-    <section class=boxmenu>
-        <div class="section__title">
-            <h2>가격대별 메뉴 구성</h2>
-            <p>큐잇만의 특별한 큐레이션 경험을 즐기세요</p>
+    <!-- <section class="chat_div">
+      <img src="images/chat.png" alt="" />
+    </section> -->
+    <footer>
+      <div>
+        <div class="footer_info">
+          <span><img src="images/black_logo.svg" alt="" /></span>
+          <span>
+            <span
+              ><a href="https://www.notion.so/54aee656fdd949cb9f820690a1e71cbd"
+                >이용약관</a
+              ></span
+            >
+            <span
+              ><a href="https://www.notion.so/5e8558ed982d426dad34199dc73ea7d9"
+                >개인정보처리방침</a
+              ></span
+            >
+          </span>
         </div>
-        <div class="container" id=work>
-            <ul class="tabs">
-                <li class="tab-link active" data-tab="tab-1">싱글</li>
-                <li class="tab-link" data-tab="tab-2">더블</li>
-                <li class="tab-link" data-tab="tab-3">패밀리</li>
-            </ul>
-        </div> 
-        <div class="work__projects active" id="tab-1">
-            <img src="images/single.png" alt="">
-        </div>
-        <div class="work__projects" id="tab-2">
-            <img src="images/double.png" alt="">
-        </div>
-        <div class="work__projects" id="tab-3">
-            <img src="images/family.png" alt="">
-        </div>
-        <button>다양한 메뉴 확인하기</button>
-    </section>
-    <section class="yello_banner">
-        <div>나에게 딱 맞는 농산물을 만나보세요</div>
-        <button>큐잇 시작하기</button>
-    </section>
-    <section class="chat_div">
-        <img src="images/chat.png" alt="">
-    </section>
-        <footer>
-            <div>
-                <div class="footer_info">
-                    <span><img src="images/logo_black.png" alt=""></span>
-                    <span>
-                        <span><a href="https://www.notion.so/54aee656fdd949cb9f820690a1e71cbd">이용약관</a></span>
-                        <span><a href="https://www.notion.so/5e8558ed982d426dad34199dc73ea7d9">개인정보처리방침</a></span>
-                    </span>
-                </div>
-                
-                <p>법인명(상호) : 주식회사 판다코퍼레이션 l 대표이사 정규인<br>서울특별시 강남구 봉은사로69길 37 부일빌딩 3층, 302호<br>사업자 등록번호 : 4458701182
-                </p>
-                <p>전화문의 : 070.4166.6077</p>
-            </div>
-            <div>
-                <p>COPYRIGHT © CU.EAT. ALL RIGHTS RESERVED.</p>
-            </div>
-        </footer>
-        <script>
-            const acc = document.getElementsByClassName("accordion");
-            let i;
-            
-            for (i = 0; i < acc.length; i++) {
-              acc[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                const panel = this.nextElementSibling;
-                if (panel.style.display === "block") {
-                  panel.style.display = "none";
-                } else {
-                  panel.style.display = "block";
-                }
-              });
-            }
-        </script>
-    </body>
+
+        <p>
+          법인명(상호) : 주식회사 판다코퍼레이션 l 대표이사 정규인<br />서울특별시
+          강남구 봉은사로69길 37 부일빌딩 3층, 302호<br />사업자 등록번호 :
+          4458701182
+        </p>
+        <p>전화문의 : 070.4166.6077</p>
+      </div>
+      <div>
+        <p>COPYRIGHT © CU.EAT. ALL RIGHTS RESERVED.</p>
+      </div>
+    </footer>
+    <script>
+      const acc = document.getElementsByClassName("accordion");
+      let i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          const panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
 </html>
