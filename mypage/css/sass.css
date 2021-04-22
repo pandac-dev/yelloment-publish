@@ -11,7 +11,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1rem 2rem;
+  padding: 3rem 2rem;
+  margin:0 auto;
   margin-bottom: 2rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -22,14 +23,12 @@
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: -0.1rem;
-  background: #eaebeb;
-  background: -webkit-gradient(linear, left bottom, left top, from(#eaebeb), to(white));
-  background: linear-gradient(0deg, #eaebeb 0%, white 100%);
+  background: #f2f2f2;
   border-bottom: 1px solid #eaeaea;
 }
 
 .qna img {
-  width: 7rem;
+  width: 5rem;
   margin-right: 1rem;
 }
 
@@ -73,7 +72,7 @@
 }
 
 .review_point > div:nth-child(1) {
-  margin: 0 2rem 3rem;
+  margin: 0 0 3rem;
 }
 
 .review_point > div:nth-child(2) {
@@ -181,7 +180,7 @@
 }
 
 .card_design {
-  margin-top: 5rem;
+  margin-top: 8rem;
   margin-bottom: 4rem;
 }
 
@@ -230,15 +229,16 @@
 
 .error div:nth-child(2) {
   margin-top: 2rem;
-  font-size: 3rem;
+  font-size: 2rem;
+  color: #777;
 }
 
 .review_box {
   position: relative;
   background: #fff;
   width: 100%;
-  padding: 2rem;
   cursor: pointer;
+  padding:3rem;
 }
 
 .review_box > div:nth-child(1) {
@@ -257,8 +257,11 @@
   margin-top: 2rem;
   font-weight: 400;
 }
-
 .green_bg {
   background: #04bf55 !important;
+}
+.productmargin{margin:2rem 0 !important;}
+@media screen and (max-width: 450px) {
+  .qna{width: 100%;}
 }
 /*# sourceMappingURL=sass.css.map */

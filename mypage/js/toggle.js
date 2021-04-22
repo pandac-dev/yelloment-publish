@@ -13,7 +13,9 @@
 //     }
 // });
 
-const subToggle = document.querySelector(".subscribe_toggle");
-subToggle.addEventListener('click',function(){
-    subToggle.classList.toggle('active');
-});
+document.addEventListener("DOMContentLoaded", function() {
+    const subToggle = document.querySelector(".subscribe_toggle");
+    subToggle.addEventListener('click',function(){
+        subToggle.classList.toggle('active');
+    });
+})
